@@ -13,6 +13,12 @@ For sample reports, please refer to `dbversion_report.txt` and `dbversion_hash.t
 
 Currently, it only supports MySQL databases (using `mysql_dbversion.py` and `mysql_main.py`) as well as MS SQL databases (using `mssql_dbversion.py` and `mssql_main.py`).
 
+## User Cases
+
+* Compare database versions without using commercial tools
+* Detech unauthorized changes of database schema/configuration data
+* By checking the dbversion report and its hash into source code repository, we can link the database version with source code and version control it
+* Ensure that the database version is properly change after the changes are applied. This step can be automated in CI/CD pipeline by checking the hash in the source code repository and the database version of the deployed database
  
 ## Instructions
 ```python 
