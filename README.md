@@ -19,8 +19,11 @@ pip install mysql-connector-python
 # or pip install pymssql
 
 # define the parameter in mysql_main.py or mssql_main.py before use
-python3 mssql_main.py
-# or python3 mysql_main.py
+python3 mysql_main.py
+# or python3 mssql_main.py
+
+# dbversion_report.txt and dbversion_hash.txt will be generated in the current folder
+
 deactivate
 ```
  
