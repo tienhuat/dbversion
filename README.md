@@ -7,6 +7,8 @@ This python script will access the database to generate the databaser version re
 
 It will also generate a SHA1 hash of the dbversion report. 
 
+For sample reports, refer to dbversion_report.txt and dbversion_hash.txt. 
+
 Currently it only support MySQL database (mysql_dbversion.py and mysql_main.py) and MS SQL (mssql_dbversion.py and mssql_main.py). 
 
  
