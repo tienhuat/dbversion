@@ -7,7 +7,7 @@ This python script will access the database to generate the report for the follo
 
 It will also generate a SHA1 hash of the dbversion report. 
 
-Currently it only support MySQL database. 
+Currently it only support MySQL database (mysql_dbversion.py and mysql_main.py) and MS SQL (mssql_dbversion.py and mssql_main.py). 
 
 
 ## Installation
@@ -16,6 +16,10 @@ Currently it only support MySQL database.
 python3 -m venv venv
 source venv/bin/activate
 pip install mysql-connector-python
+
+# define the parameter in mysql_main.py or mssql_main.py before use
+python3 mssql_main.py
+# or python3 mysql_main.py
 deactivate
 ```
 Run the script by calling main.py
