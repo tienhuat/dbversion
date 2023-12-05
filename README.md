@@ -22,5 +22,5 @@ python3 mssql_main.py
 # or python3 mysql_main.py
 deactivate
 ```
-Run the script by calling main.py
+ 
 
