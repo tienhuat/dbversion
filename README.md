@@ -5,13 +5,13 @@
 This Python script is designed to query the database and generate a database version report, including the following elements:
 
 * Database schema elements such as tables, views, stored procedures, indexes, and unique constraints.
-* Configuration data that impacts the program's logic. You can customize the SQL script inside the xxx_dbversion.py file.
+* Configuration data that impacts the program's logic. You can customize the SQL script inside the `xxx_dbversion.py` file.
 
 Additionally, it will create a SHA1 hash of the dbversion report.
 
-For sample reports, please refer to dbversion_report.txt and dbversion_hash.txt.
+For sample reports, please refer to `dbversion_report.txt` and `dbversion_hash.txt`.
 
-Currently, it only supports MySQL databases (using mysql_dbversion.py and mysql_main.py) as well as MS SQL databases (using mssql_dbversion.py and mssql_main.py).
+Currently, it only supports MySQL databases (using `mysql_dbversion.py` and `mysql_main.py`) as well as MS SQL databases (using `mssql_dbversion.py` and `mssql_main.py`).
 
  
 ## Instructions
