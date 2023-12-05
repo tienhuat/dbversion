@@ -36,7 +36,7 @@ pip install mysql-connector-python
 python3 mysql_main.py
 # or python3 mssql_main.py
 
-# `dbversion_report.txt` and `dbversion_hash.txt` will be generated in the current folder
+# `dbversion_report.txt` and `dbversion_hash.txt` will be generated in the working directory
 
 # Deactivate the venv
 deactivate
