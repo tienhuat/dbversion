@@ -3,7 +3,7 @@
 ## Purpose
 This python script will access the database to generate the databaser version report for the following
  * database schema, eg table, view, stored procedures, index, unique constraints
- * master data, which affect the program logic. Customize the sql script inside xxx_dbversion.py
+ * configuration data, which affect the program logic. Customize the sql script inside xxx_dbversion.py
 
 It will also generate a SHA1 hash of the dbversion report. 
 
