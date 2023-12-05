@@ -636,7 +636,7 @@ c.CategoryName
 # install python virtual environment
 # python3 -m venv venv
 # source venv/bin/activate
-# pip install mysql-connector-python
+# pip install pip install pymssql
 # deactivate
 
 

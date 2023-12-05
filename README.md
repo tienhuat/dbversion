@@ -16,6 +16,7 @@ Currently it only support MySQL database (mysql_dbversion.py and mysql_main.py) 
 python3 -m venv venv
 source venv/bin/activate
 pip install mysql-connector-python
+# or pip install pymssql
 
 # define the parameter in mysql_main.py or mssql_main.py before use
 python3 mssql_main.py
