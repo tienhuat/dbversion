@@ -1,7 +1,7 @@
 # dbversion
 
 ## Purpose
-This python script will access the database to generate the report for the following
+This python script will access the database to generate the databaser version report for the following
  * database schema, eg table, view, stored procedures, index, unique constraints
  * master data, which affect the program logic. Customize the sql script inside dbversion.py
 
@@ -9,6 +9,7 @@ It will also generate a SHA1 hash of the dbversion report.
 
 Currently it only support MySQL database (mysql_dbversion.py and mysql_main.py) and MS SQL (mssql_dbversion.py and mssql_main.py). 
 
+Customize the script: go to the xx_dbversion.py, edit the configuration table for your application. Configuration here refers to any code table, setting, rules, workflow etc which will affect the behaviour of the application. 
 
 ## Instruction
 ```python 
