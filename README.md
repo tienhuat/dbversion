@@ -2,10 +2,11 @@
 
 ## Purpose
 
-This Python script is designed to query the database and generate a database version report, including the following elements:
+This Python script has been created to perform database queries and generate a comprehensive database version report, which encompasses the following components:
 
-* Database schema elements such as tables, views, stored procedures, triggers, indexes, check constraints, unique constraints, etc.
-* Configuration data that impacts the program's logic, e.g. code table, rules, workflow, etc. You can customize the SQL script inside the `xxx_dbversion.py` file.
+1. Database schema elements, including tables, views, stored procedures, triggers, indexes, check constraints, unique constraints, and more.
+
+1. Configuration data that directly influences the program's logic, such as code tables, rules, workflows, and so forth. You have the flexibility to customize the SQL script within the `xxx_dbversion.py` file as needed.
 
 Additionally, it will create a SHA1 hash of the dbversion report.
 
