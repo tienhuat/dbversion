@@ -16,7 +16,7 @@ Currently, it only supports MySQL databases (using `mysql_dbversion.py` and `mys
 ## Use Cases
 
 * Compare database versions without using commercial tools
-* Detect unauthorized changes of database schema/configuration data
+* Detect unauthorized changes of database version
 * By checking the dbversion report and its hash into source code repository, we can link the database version with source code and version control it
 * Ensure that the database version is properly changed after the changes are applied. This step can be automated in CI/CD pipeline by checking the hash in the source code repository and the database version of the deployed database
  
