@@ -1,31 +1,32 @@
 # dbversion
 
 ## Purpose
-This python script will access the database to generate the databaser version report for the following
- * database schema, eg table, view, stored procedures, index, unique constraints
- * configuration data, which affect the program logic. Customize the sql script inside xxx_dbversion.py
 
-It will also generate a SHA1 hash of the dbversion report. 
+This Python script is designed to query the database and generate a database version report, including the following elements:
 
-For sample reports, refer to dbversion_report.txt and dbversion_hash.txt. 
+* Database schema elements such as tables, views, stored procedures, indexes, and unique constraints.
+* Configuration data that impacts the program's logic. You can customize the SQL script inside the xxx_dbversion.py file.
 
-Currently it only support MySQL database (mysql_dbversion.py and mysql_main.py) and MS SQL (mssql_dbversion.py and mssql_main.py). 
+Additionally, it will create a SHA1 hash of the dbversion report.
+
+For sample reports, please refer to dbversion_report.txt and dbversion_hash.txt.
+
+Currently, it only supports MySQL databases (using mysql_dbversion.py and mysql_main.py) as well as MS SQL databases (using mssql_dbversion.py and mssql_main.py).
 
  
-
-## Instruction
+## Instructions
 ```python 
-# install python virtual environment
+# Install the Python virtual environment
 python3 -m venv venv
 source venv/bin/activate
 pip install mysql-connector-python
 # or pip install pymssql
 
-# define the parameter in mysql_main.py or mssql_main.py before use
+# Define the parameters in `mysql_main.py` or `mssql_main.py` before use
 python3 mysql_main.py
 # or python3 mssql_main.py
 
-# dbversion_report.txt and dbversion_hash.txt will be generated in the current folder
+# `dbversion_report.txt` and `dbversion_hash.txt` will be generated in the current folder
 
 deactivate
 ```
