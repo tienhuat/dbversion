@@ -10,7 +10,7 @@ It will also generate a SHA1 hash of the dbversion report.
 Currently it only support MySQL database (mysql_dbversion.py and mysql_main.py) and MS SQL (mssql_dbversion.py and mssql_main.py). 
 
 
-## Installation
+## Instruction
 ```python 
 # install python virtual environment
 python3 -m venv venv
