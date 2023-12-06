@@ -22,8 +22,10 @@ class Dbversion:
         try:
           
             print("connection starting")
-            connection =  pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER=' +
-                self.host+';DATABASE='+self.database+';UID='+self.user+';PWD=' + self.password)
+            connectionString = 'DRIVER={ODBC Driver 17 for SQL Server};SERVER=' + \
+                self.host+';DATABASE='+self.database+';UID='+self.user+';PWD=' + self.password
+            
+            connection =  pyodbc.connect(connectionString)
 
             print("connection successful")
 
@@ -51,6 +53,7 @@ class Dbversion:
             report = report.strip()          
         except Exception as e:
             print("Error while connecting to MS SQL", e)
+            pass
         
 
         return report
