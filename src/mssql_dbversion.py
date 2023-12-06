@@ -1,5 +1,4 @@
-import pymssql
- 
+import pyodbc
 
 import hashlib
 import json
@@ -22,26 +21,34 @@ class Dbversion:
 
         try:
           
-            with pymssql.connect(self.host, self.user, self.password, self.database) as connection:
+            print("connection starting")
+            connection =  pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER=' +
+                self.host+';DATABASE='+self.database+';UID='+self.user+';PWD=' + self.password)
 
-                cursor = connection.cursor()
+            print("connection successful")
 
-                for queryName, queryStatement in self.sqls.items():   
+            cursor = connection.cursor()
 
-                    queryStatement = queryStatement.replace("%schema_name", "'" + self.schema + "' ")
+            print("get the cursor")
 
-                    cursor.execute(queryStatement)
-                    rows = cursor.fetchall()
-                    
-                    report = report + "--------------------------------------------" + "\r\n"
-                    report = report + queryName + ":" + str(cursor.rowcount) +  "\r\n"
-                    report = report + "--------------------------------------------" + "\r\n"
-     
+            for queryName, queryStatement in self.sqls.items():   
 
-                    report = report + self.to_json(cursor, rows) + "\r\n" 
-                    report = report + "\r\n\r\n"
+                queryStatement = queryStatement.replace("%schema_name", "'" + self.schema + "' ")
+
+                cursor.execute(queryStatement)
+                print("cursor executed")
+
+                rows = cursor.fetchall()
                 
-                report = report.strip()          
+                report = report + "--------------------------------------------" + "\r\n"
+                report = report + queryName + ":" + str(cursor.rowcount) +  "\r\n"
+                report = report + "--------------------------------------------" + "\r\n"
+    
+
+                report = report + self.to_json(cursor, rows) + "\r\n" 
+                report = report + "\r\n\r\n"
+            
+            report = report.strip()          
         except Exception as e:
             print("Error while connecting to MS SQL", e)
         
