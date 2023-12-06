@@ -31,22 +31,22 @@ class Dbversion:
 
             cursor = connection.cursor()
 
-            print("get the cursor")
+         
 
             for queryName, queryStatement in self.sqls.items():   
 
                 queryStatement = queryStatement.replace("%schema_name", "'" + self.schema + "' ")
 
                 cursor.execute(queryStatement)
-                print("cursor executed")
-
+              
                 rows = cursor.fetchall()
+
+                print("fetching " + queryName )
                 
                 report = report + "--------------------------------------------" + "\r\n"
-                report = report + queryName + ":" + str(cursor.rowcount) +  "\r\n"
+                report = report + queryName +  "\r\n"
                 report = report + "--------------------------------------------" + "\r\n"
     
-
                 report = report + self.to_json(cursor, rows) + "\r\n" 
                 report = report + "\r\n\r\n"
             
