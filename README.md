@@ -24,7 +24,7 @@ Currently, it only supports MySQL databases (using `mysql_dbversion.py` and `mys
  
 ## Instructions
 ```python 
-# Install the Python virtual environment
+# Install the Python virtual environment, optional
 python3 -m venv venv
 
 # Activate the venv in a terminal session
@@ -32,6 +32,7 @@ source venv/bin/activate
 # venv/Scripts/activate.bat (for Windows cmd)
 # venv/Script/activate.ps1 (for Windows PowerShell)
 
+# Install database driver in venv, or global environment, if venv is not activated
 pip install mysql-connector-python
 # or pip install pymssql
 
