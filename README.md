@@ -27,7 +27,7 @@ Currently, it only supports MySQL databases (using `mysql_dbversion.py` and `mys
 # Install the Python virtual environment, optional
 python3 -m venv venv
 
-# Activate the venv in a terminal session
+# Activate the venv in the terminal session
 source venv/bin/activate
 # venv/Scripts/activate.bat (for Windows cmd)
 # venv/Script/activate.ps1 (for Windows PowerShell)
@@ -44,7 +44,7 @@ python3 mysql_main.py
 
 # `dbversion_report.txt` and `dbversion_hash.txt` will be generated in the working directory
 
-# Deactivate the venv in a terminal session, optional 
+# Deactivate the venv in the terminal session, optional 
 deactivate
 ```
  
