@@ -34,7 +34,7 @@ source venv/bin/activate
 
 # Install database driver in venv, or global environment, if venv is not activated
 pip install mysql-connector-python
-# or pip install pymssql
+# or pip install pyodbc (to access MS SQL database)
 
 # Define the parameters in `mysql_main.py` or `mssql_main.py` before use
 
