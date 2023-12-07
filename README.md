@@ -38,7 +38,8 @@ pip install mysql-connector-python
 
 # Define the parameters in `mysql_main.py` or `mssql_main.py` before use
 
-# Generate the report
+# Generate the report and hash.
+# dbversion_report.txt and dbversion_hash.txt will be created in the working directory
 python3 mysql_main.py
 # or python3 mssql_main.py
 
