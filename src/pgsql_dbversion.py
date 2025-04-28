@@ -86,6 +86,11 @@ class Dbversion:
 
         return "\r\n".join(json_data)
 
+# ----------------------------------------------------
+# You man need to remove some of the SQL statements that represent something that is not
+# related to database versioning.
+# ----------------------------------------------------
+
     sqls = {
 "0":
 """
@@ -689,7 +694,9 @@ and c.TABLE_NAME not like '\_\_%'
 ORDER BY c.table_catalog, c.table_schema, c.table_name, c.view_definition, c.check_option, c.is_updatable, c.is_insertable_into, c.is_trigger_updatable, c.is_trigger_deletable, c.is_trigger_insertable_into;
 """   
     # --------------------------------
-    # master data table, which affect the application logic
+    # master data, which affect the application logic
+    # Pls add any master data below, if any. 
+    # "69" : "<sql statement to get the master data>"
     # --------------------------------
     
 }
