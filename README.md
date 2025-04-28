@@ -43,6 +43,7 @@ pip install mysql-connector-python
 # Generate the report and hash.
 python3 mysql_main.py
 # or python3 mssql_main.py
+# or python3 pgsql_main.py
 
 # `dbversion_report.txt` and `dbversion_hash.txt` will be generated in the working directory
 
