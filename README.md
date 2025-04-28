@@ -8,7 +8,7 @@ This Python script has been created to perform database queries and generate a c
 
 1. Configuration data that directly influences the program's logic, such as code tables, rules, workflows, and so forth. You have the flexibility to customize the SQL script within the `xxx_dbversion.py` file as needed.
 
-Additionally, it will create a SHA1 hash of the database version report.
+Additionally, it will create a SHA256 hash of the database version report.
 
 For sample reports, please refer to `dbversion_report.txt` and `dbversion_hash.txt`.
 
