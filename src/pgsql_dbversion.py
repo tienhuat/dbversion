@@ -51,13 +51,13 @@ class Dbversion:
                 
                 report = report.strip()          
         except Error as e:
-            print("Error while connecting to MySQL", e)
+            print("Error while connecting to Postgresql", e)
         finally:
             # Closing the connection
             if connection.closed == 0:
                 cursor.close()
                 connection.close()
-                print("MySQL connection is closed")
+                print("Postgresql connection is closed")
 
         return report
 
