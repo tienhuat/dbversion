@@ -1,0 +1,389 @@
+--------------------------------------------
+schema:1
+--------------------------------------------
+{"CATALOG_NAME": "def", "SCHEMA_NAME": "classicmodels", "DEFAULT_CHARACTER_SET_NAME": "utf8mb4", "DEFAULT_COLLATION_NAME": "utf8mb4_0900_ai_ci", "DEFAULT_ENCRYPTION": "NO"}
+
+
+--------------------------------------------
+table:9
+--------------------------------------------
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "customers", "TABLE_TYPE": "BASE TABLE", "ENGINE": "InnoDB", "ROW_FORMAT": "Dynamic"}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "employees", "TABLE_TYPE": "BASE TABLE", "ENGINE": "InnoDB", "ROW_FORMAT": "Dynamic"}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "offices", "TABLE_TYPE": "BASE TABLE", "ENGINE": "InnoDB", "ROW_FORMAT": "Dynamic"}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orderdetails", "TABLE_TYPE": "BASE TABLE", "ENGINE": "InnoDB", "ROW_FORMAT": "Dynamic"}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orders", "TABLE_TYPE": "BASE TABLE", "ENGINE": "InnoDB", "ROW_FORMAT": "Dynamic"}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "payments", "TABLE_TYPE": "BASE TABLE", "ENGINE": "InnoDB", "ROW_FORMAT": "Dynamic"}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "productlines", "TABLE_TYPE": "BASE TABLE", "ENGINE": "InnoDB", "ROW_FORMAT": "Dynamic"}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "products", "TABLE_TYPE": "BASE TABLE", "ENGINE": "InnoDB", "ROW_FORMAT": "Dynamic"}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "table1", "TABLE_TYPE": "BASE TABLE", "ENGINE": "InnoDB", "ROW_FORMAT": "Dynamic"}
+
+
+--------------------------------------------
+table_extension:9
+--------------------------------------------
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "customers", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "employees", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "offices", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orderdetails", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orders", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "payments", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "productlines", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "products", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "table1", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+
+
+--------------------------------------------
+column:59
+--------------------------------------------
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "customers", "COLUMN_NAME": "addressLine1", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "varchar", "CHARACTER_MAXIMUM_LENGTH": 50, "CHARACTER_OCTET_LENGTH": 200, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "varchar(50)", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "customers", "COLUMN_NAME": "addressLine2", "COLUMN_DEFAULT": null, "IS_NULLABLE": "YES", "DATA_TYPE": "varchar", "CHARACTER_MAXIMUM_LENGTH": 50, "CHARACTER_OCTET_LENGTH": 200, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "varchar(50)", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "customers", "COLUMN_NAME": "city", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "varchar", "CHARACTER_MAXIMUM_LENGTH": 50, "CHARACTER_OCTET_LENGTH": 200, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "varchar(50)", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "customers", "COLUMN_NAME": "contactFirstName", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "varchar", "CHARACTER_MAXIMUM_LENGTH": 50, "CHARACTER_OCTET_LENGTH": 200, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "varchar(50)", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "customers", "COLUMN_NAME": "contactLastName", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "varchar", "CHARACTER_MAXIMUM_LENGTH": 50, "CHARACTER_OCTET_LENGTH": 200, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "varchar(50)", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "customers", "COLUMN_NAME": "country", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "varchar", "CHARACTER_MAXIMUM_LENGTH": 50, "CHARACTER_OCTET_LENGTH": 200, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "varchar(50)", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "customers", "COLUMN_NAME": "creditLimit", "COLUMN_DEFAULT": null, "IS_NULLABLE": "YES", "DATA_TYPE": "decimal", "CHARACTER_MAXIMUM_LENGTH": null, "CHARACTER_OCTET_LENGTH": null, "NUMERIC_PRECISION": 10, "NUMERIC_SCALE": 2, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": null, "COLLATION_NAME": null, "COLUMN_TYPE": "decimal(10,2)", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "customers", "COLUMN_NAME": "customerName", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "varchar", "CHARACTER_MAXIMUM_LENGTH": 52, "CHARACTER_OCTET_LENGTH": 208, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "varchar(52)", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "customers", "COLUMN_NAME": "customerNumber", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "int", "CHARACTER_MAXIMUM_LENGTH": null, "CHARACTER_OCTET_LENGTH": null, "NUMERIC_PRECISION": 10, "NUMERIC_SCALE": 0, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": null, "COLLATION_NAME": null, "COLUMN_TYPE": "int", "COLUMN_KEY": "PRI", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "customers", "COLUMN_NAME": "phone", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "varchar", "CHARACTER_MAXIMUM_LENGTH": 50, "CHARACTER_OCTET_LENGTH": 200, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "varchar(50)", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "customers", "COLUMN_NAME": "postalCode", "COLUMN_DEFAULT": null, "IS_NULLABLE": "YES", "DATA_TYPE": "varchar", "CHARACTER_MAXIMUM_LENGTH": 15, "CHARACTER_OCTET_LENGTH": 60, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "varchar(15)", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "customers", "COLUMN_NAME": "salesRepEmployeeNumber", "COLUMN_DEFAULT": null, "IS_NULLABLE": "YES", "DATA_TYPE": "int", "CHARACTER_MAXIMUM_LENGTH": null, "CHARACTER_OCTET_LENGTH": null, "NUMERIC_PRECISION": 10, "NUMERIC_SCALE": 0, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": null, "COLLATION_NAME": null, "COLUMN_TYPE": "int", "COLUMN_KEY": "MUL", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "customers", "COLUMN_NAME": "state", "COLUMN_DEFAULT": null, "IS_NULLABLE": "YES", "DATA_TYPE": "varchar", "CHARACTER_MAXIMUM_LENGTH": 50, "CHARACTER_OCTET_LENGTH": 200, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "varchar(50)", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "employees", "COLUMN_NAME": "email", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "varchar", "CHARACTER_MAXIMUM_LENGTH": 100, "CHARACTER_OCTET_LENGTH": 400, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "varchar(100)", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "employees", "COLUMN_NAME": "employeeNumber", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "int", "CHARACTER_MAXIMUM_LENGTH": null, "CHARACTER_OCTET_LENGTH": null, "NUMERIC_PRECISION": 10, "NUMERIC_SCALE": 0, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": null, "COLLATION_NAME": null, "COLUMN_TYPE": "int", "COLUMN_KEY": "PRI", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "employees", "COLUMN_NAME": "extension", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "varchar", "CHARACTER_MAXIMUM_LENGTH": 10, "CHARACTER_OCTET_LENGTH": 40, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "varchar(10)", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "employees", "COLUMN_NAME": "firstName", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "varchar", "CHARACTER_MAXIMUM_LENGTH": 50, "CHARACTER_OCTET_LENGTH": 200, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "varchar(50)", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "employees", "COLUMN_NAME": "jobTitle", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "varchar", "CHARACTER_MAXIMUM_LENGTH": 50, "CHARACTER_OCTET_LENGTH": 200, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "varchar(50)", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "employees", "COLUMN_NAME": "lastName", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "varchar", "CHARACTER_MAXIMUM_LENGTH": 50, "CHARACTER_OCTET_LENGTH": 200, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "varchar(50)", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "employees", "COLUMN_NAME": "officeCode", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "varchar", "CHARACTER_MAXIMUM_LENGTH": 10, "CHARACTER_OCTET_LENGTH": 40, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "varchar(10)", "COLUMN_KEY": "MUL", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "employees", "COLUMN_NAME": "reportsTo", "COLUMN_DEFAULT": null, "IS_NULLABLE": "YES", "DATA_TYPE": "int", "CHARACTER_MAXIMUM_LENGTH": null, "CHARACTER_OCTET_LENGTH": null, "NUMERIC_PRECISION": 10, "NUMERIC_SCALE": 0, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": null, "COLLATION_NAME": null, "COLUMN_TYPE": "int", "COLUMN_KEY": "MUL", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "offices", "COLUMN_NAME": "addressLine1", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "varchar", "CHARACTER_MAXIMUM_LENGTH": 50, "CHARACTER_OCTET_LENGTH": 200, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "varchar(50)", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "offices", "COLUMN_NAME": "addressLine2", "COLUMN_DEFAULT": null, "IS_NULLABLE": "YES", "DATA_TYPE": "varchar", "CHARACTER_MAXIMUM_LENGTH": 50, "CHARACTER_OCTET_LENGTH": 200, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "varchar(50)", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "offices", "COLUMN_NAME": "city", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "varchar", "CHARACTER_MAXIMUM_LENGTH": 50, "CHARACTER_OCTET_LENGTH": 200, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "varchar(50)", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "offices", "COLUMN_NAME": "country", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "varchar", "CHARACTER_MAXIMUM_LENGTH": 50, "CHARACTER_OCTET_LENGTH": 200, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "varchar(50)", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "offices", "COLUMN_NAME": "officeCode", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "varchar", "CHARACTER_MAXIMUM_LENGTH": 10, "CHARACTER_OCTET_LENGTH": 40, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "varchar(10)", "COLUMN_KEY": "PRI", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "offices", "COLUMN_NAME": "phone", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "varchar", "CHARACTER_MAXIMUM_LENGTH": 50, "CHARACTER_OCTET_LENGTH": 200, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "varchar(50)", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "offices", "COLUMN_NAME": "postalCode", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "varchar", "CHARACTER_MAXIMUM_LENGTH": 15, "CHARACTER_OCTET_LENGTH": 60, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "varchar(15)", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "offices", "COLUMN_NAME": "state", "COLUMN_DEFAULT": null, "IS_NULLABLE": "YES", "DATA_TYPE": "varchar", "CHARACTER_MAXIMUM_LENGTH": 50, "CHARACTER_OCTET_LENGTH": 200, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "varchar(50)", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "offices", "COLUMN_NAME": "territory", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "varchar", "CHARACTER_MAXIMUM_LENGTH": 10, "CHARACTER_OCTET_LENGTH": 40, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "varchar(10)", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orderdetails", "COLUMN_NAME": "orderLineNumber", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "smallint", "CHARACTER_MAXIMUM_LENGTH": null, "CHARACTER_OCTET_LENGTH": null, "NUMERIC_PRECISION": 5, "NUMERIC_SCALE": 0, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": null, "COLLATION_NAME": null, "COLUMN_TYPE": "smallint", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orderdetails", "COLUMN_NAME": "orderNumber", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "int", "CHARACTER_MAXIMUM_LENGTH": null, "CHARACTER_OCTET_LENGTH": null, "NUMERIC_PRECISION": 10, "NUMERIC_SCALE": 0, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": null, "COLLATION_NAME": null, "COLUMN_TYPE": "int", "COLUMN_KEY": "PRI", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orderdetails", "COLUMN_NAME": "priceEach", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "decimal", "CHARACTER_MAXIMUM_LENGTH": null, "CHARACTER_OCTET_LENGTH": null, "NUMERIC_PRECISION": 10, "NUMERIC_SCALE": 2, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": null, "COLLATION_NAME": null, "COLUMN_TYPE": "decimal(10,2)", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orderdetails", "COLUMN_NAME": "productCode", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "varchar", "CHARACTER_MAXIMUM_LENGTH": 15, "CHARACTER_OCTET_LENGTH": 60, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "varchar(15)", "COLUMN_KEY": "PRI", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orderdetails", "COLUMN_NAME": "quantityOrdered", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "int", "CHARACTER_MAXIMUM_LENGTH": null, "CHARACTER_OCTET_LENGTH": null, "NUMERIC_PRECISION": 10, "NUMERIC_SCALE": 0, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": null, "COLLATION_NAME": null, "COLUMN_TYPE": "int", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orders", "COLUMN_NAME": "comments", "COLUMN_DEFAULT": null, "IS_NULLABLE": "YES", "DATA_TYPE": "text", "CHARACTER_MAXIMUM_LENGTH": 65535, "CHARACTER_OCTET_LENGTH": 65535, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "text", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orders", "COLUMN_NAME": "customerNumber", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "int", "CHARACTER_MAXIMUM_LENGTH": null, "CHARACTER_OCTET_LENGTH": null, "NUMERIC_PRECISION": 10, "NUMERIC_SCALE": 0, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": null, "COLLATION_NAME": null, "COLUMN_TYPE": "int", "COLUMN_KEY": "MUL", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orders", "COLUMN_NAME": "orderDate", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "date", "CHARACTER_MAXIMUM_LENGTH": null, "CHARACTER_OCTET_LENGTH": null, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": null, "COLLATION_NAME": null, "COLUMN_TYPE": "date", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orders", "COLUMN_NAME": "orderNumber", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "int", "CHARACTER_MAXIMUM_LENGTH": null, "CHARACTER_OCTET_LENGTH": null, "NUMERIC_PRECISION": 10, "NUMERIC_SCALE": 0, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": null, "COLLATION_NAME": null, "COLUMN_TYPE": "int", "COLUMN_KEY": "PRI", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orders", "COLUMN_NAME": "requiredDate", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "date", "CHARACTER_MAXIMUM_LENGTH": null, "CHARACTER_OCTET_LENGTH": null, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": null, "COLLATION_NAME": null, "COLUMN_TYPE": "date", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orders", "COLUMN_NAME": "shippedDate", "COLUMN_DEFAULT": null, "IS_NULLABLE": "YES", "DATA_TYPE": "date", "CHARACTER_MAXIMUM_LENGTH": null, "CHARACTER_OCTET_LENGTH": null, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": null, "COLLATION_NAME": null, "COLUMN_TYPE": "date", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orders", "COLUMN_NAME": "status", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "varchar", "CHARACTER_MAXIMUM_LENGTH": 15, "CHARACTER_OCTET_LENGTH": 60, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "varchar(15)", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "payments", "COLUMN_NAME": "amount", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "decimal", "CHARACTER_MAXIMUM_LENGTH": null, "CHARACTER_OCTET_LENGTH": null, "NUMERIC_PRECISION": 10, "NUMERIC_SCALE": 2, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": null, "COLLATION_NAME": null, "COLUMN_TYPE": "decimal(10,2)", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "payments", "COLUMN_NAME": "checkNumber", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "varchar", "CHARACTER_MAXIMUM_LENGTH": 50, "CHARACTER_OCTET_LENGTH": 200, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "varchar(50)", "COLUMN_KEY": "PRI", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "payments", "COLUMN_NAME": "customerNumber", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "int", "CHARACTER_MAXIMUM_LENGTH": null, "CHARACTER_OCTET_LENGTH": null, "NUMERIC_PRECISION": 10, "NUMERIC_SCALE": 0, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": null, "COLLATION_NAME": null, "COLUMN_TYPE": "int", "COLUMN_KEY": "PRI", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "payments", "COLUMN_NAME": "paymentDate", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "date", "CHARACTER_MAXIMUM_LENGTH": null, "CHARACTER_OCTET_LENGTH": null, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": null, "COLLATION_NAME": null, "COLUMN_TYPE": "date", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "productlines", "COLUMN_NAME": "htmlDescription", "COLUMN_DEFAULT": null, "IS_NULLABLE": "YES", "DATA_TYPE": "mediumtext", "CHARACTER_MAXIMUM_LENGTH": 16777215, "CHARACTER_OCTET_LENGTH": 16777215, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "mediumtext", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "productlines", "COLUMN_NAME": "image", "COLUMN_DEFAULT": null, "IS_NULLABLE": "YES", "DATA_TYPE": "mediumblob", "CHARACTER_MAXIMUM_LENGTH": 16777215, "CHARACTER_OCTET_LENGTH": 16777215, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": null, "COLLATION_NAME": null, "COLUMN_TYPE": "mediumblob", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "productlines", "COLUMN_NAME": "productLine", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "varchar", "CHARACTER_MAXIMUM_LENGTH": 50, "CHARACTER_OCTET_LENGTH": 200, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "varchar(50)", "COLUMN_KEY": "PRI", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "productlines", "COLUMN_NAME": "textDescription", "COLUMN_DEFAULT": null, "IS_NULLABLE": "YES", "DATA_TYPE": "varchar", "CHARACTER_MAXIMUM_LENGTH": 4000, "CHARACTER_OCTET_LENGTH": 16000, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "varchar(4000)", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "products", "COLUMN_NAME": "buyPrice", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "decimal", "CHARACTER_MAXIMUM_LENGTH": null, "CHARACTER_OCTET_LENGTH": null, "NUMERIC_PRECISION": 10, "NUMERIC_SCALE": 2, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": null, "COLLATION_NAME": null, "COLUMN_TYPE": "decimal(10,2)", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "products", "COLUMN_NAME": "MSRP", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "decimal", "CHARACTER_MAXIMUM_LENGTH": null, "CHARACTER_OCTET_LENGTH": null, "NUMERIC_PRECISION": 10, "NUMERIC_SCALE": 2, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": null, "COLLATION_NAME": null, "COLUMN_TYPE": "decimal(10,2)", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "products", "COLUMN_NAME": "productCode", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "varchar", "CHARACTER_MAXIMUM_LENGTH": 15, "CHARACTER_OCTET_LENGTH": 60, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "varchar(15)", "COLUMN_KEY": "PRI", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "products", "COLUMN_NAME": "productDescription", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "text", "CHARACTER_MAXIMUM_LENGTH": 65535, "CHARACTER_OCTET_LENGTH": 65535, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "text", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "products", "COLUMN_NAME": "productLine", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "varchar", "CHARACTER_MAXIMUM_LENGTH": 50, "CHARACTER_OCTET_LENGTH": 200, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "varchar(50)", "COLUMN_KEY": "MUL", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "products", "COLUMN_NAME": "productName", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "varchar", "CHARACTER_MAXIMUM_LENGTH": 70, "CHARACTER_OCTET_LENGTH": 280, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "varchar(70)", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "products", "COLUMN_NAME": "productScale", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "varchar", "CHARACTER_MAXIMUM_LENGTH": 10, "CHARACTER_OCTET_LENGTH": 40, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "varchar(10)", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "products", "COLUMN_NAME": "productVendor", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "varchar", "CHARACTER_MAXIMUM_LENGTH": 50, "CHARACTER_OCTET_LENGTH": 200, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": "utf8mb4", "COLLATION_NAME": "utf8mb4_0900_ai_ci", "COLUMN_TYPE": "varchar(50)", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "products", "COLUMN_NAME": "quantityInStock", "COLUMN_DEFAULT": null, "IS_NULLABLE": "NO", "DATA_TYPE": "smallint", "CHARACTER_MAXIMUM_LENGTH": null, "CHARACTER_OCTET_LENGTH": null, "NUMERIC_PRECISION": 5, "NUMERIC_SCALE": 0, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": null, "COLLATION_NAME": null, "COLUMN_TYPE": "smallint", "COLUMN_KEY": "", "SRS_ID": null, "GENERATION_EXPRESSION": ""}
+
+
+--------------------------------------------
+column_extension:59
+--------------------------------------------
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "customers", "COLUMN_NAME": "addressLine1", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "customers", "COLUMN_NAME": "addressLine2", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "customers", "COLUMN_NAME": "city", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "customers", "COLUMN_NAME": "contactFirstName", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "customers", "COLUMN_NAME": "contactLastName", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "customers", "COLUMN_NAME": "country", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "customers", "COLUMN_NAME": "creditLimit", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "customers", "COLUMN_NAME": "customerName", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "customers", "COLUMN_NAME": "customerNumber", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "customers", "COLUMN_NAME": "phone", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "customers", "COLUMN_NAME": "postalCode", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "customers", "COLUMN_NAME": "salesRepEmployeeNumber", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "customers", "COLUMN_NAME": "state", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "employees", "COLUMN_NAME": "email", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "employees", "COLUMN_NAME": "employeeNumber", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "employees", "COLUMN_NAME": "extension", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "employees", "COLUMN_NAME": "firstName", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "employees", "COLUMN_NAME": "jobTitle", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "employees", "COLUMN_NAME": "lastName", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "employees", "COLUMN_NAME": "officeCode", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "employees", "COLUMN_NAME": "reportsTo", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "offices", "COLUMN_NAME": "addressLine1", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "offices", "COLUMN_NAME": "addressLine2", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "offices", "COLUMN_NAME": "city", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "offices", "COLUMN_NAME": "country", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "offices", "COLUMN_NAME": "officeCode", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "offices", "COLUMN_NAME": "phone", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "offices", "COLUMN_NAME": "postalCode", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "offices", "COLUMN_NAME": "state", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "offices", "COLUMN_NAME": "territory", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orderdetails", "COLUMN_NAME": "orderLineNumber", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orderdetails", "COLUMN_NAME": "orderNumber", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orderdetails", "COLUMN_NAME": "priceEach", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orderdetails", "COLUMN_NAME": "productCode", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orderdetails", "COLUMN_NAME": "quantityOrdered", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orders", "COLUMN_NAME": "comments", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orders", "COLUMN_NAME": "customerNumber", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orders", "COLUMN_NAME": "orderDate", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orders", "COLUMN_NAME": "orderNumber", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orders", "COLUMN_NAME": "requiredDate", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orders", "COLUMN_NAME": "shippedDate", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orders", "COLUMN_NAME": "status", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "payments", "COLUMN_NAME": "amount", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "payments", "COLUMN_NAME": "checkNumber", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "payments", "COLUMN_NAME": "customerNumber", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "payments", "COLUMN_NAME": "paymentDate", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "productlines", "COLUMN_NAME": "htmlDescription", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "productlines", "COLUMN_NAME": "image", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "productlines", "COLUMN_NAME": "productLine", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "productlines", "COLUMN_NAME": "textDescription", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "products", "COLUMN_NAME": "buyPrice", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "products", "COLUMN_NAME": "MSRP", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "products", "COLUMN_NAME": "productCode", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "products", "COLUMN_NAME": "productDescription", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "products", "COLUMN_NAME": "productLine", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "products", "COLUMN_NAME": "productName", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "products", "COLUMN_NAME": "productScale", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "products", "COLUMN_NAME": "productVendor", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "products", "COLUMN_NAME": "quantityInStock", "ENGINE_ATTRIBUTE": null, "SECONDARY_ENGINE_ATTRIBUTE": null}
+
+
+--------------------------------------------
+constraint:16
+--------------------------------------------
+{"CONSTRAINT_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "customers", "CONSTRAINT_NAME": "customers_ibfk_1", "CONSTRAINT_TYPE": "FOREIGN KEY", "ENFORCED": "YES"}
+{"CONSTRAINT_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "customers", "CONSTRAINT_NAME": "PRIMARY", "CONSTRAINT_TYPE": "PRIMARY KEY", "ENFORCED": "YES"}
+{"CONSTRAINT_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "employees", "CONSTRAINT_NAME": "employees_ibfk_1", "CONSTRAINT_TYPE": "FOREIGN KEY", "ENFORCED": "YES"}
+{"CONSTRAINT_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "employees", "CONSTRAINT_NAME": "employees_ibfk_2", "CONSTRAINT_TYPE": "FOREIGN KEY", "ENFORCED": "YES"}
+{"CONSTRAINT_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "employees", "CONSTRAINT_NAME": "PRIMARY", "CONSTRAINT_TYPE": "PRIMARY KEY", "ENFORCED": "YES"}
+{"CONSTRAINT_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "offices", "CONSTRAINT_NAME": "PRIMARY", "CONSTRAINT_TYPE": "PRIMARY KEY", "ENFORCED": "YES"}
+{"CONSTRAINT_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orderdetails", "CONSTRAINT_NAME": "orderdetails_ibfk_1", "CONSTRAINT_TYPE": "FOREIGN KEY", "ENFORCED": "YES"}
+{"CONSTRAINT_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orderdetails", "CONSTRAINT_NAME": "orderdetails_ibfk_2", "CONSTRAINT_TYPE": "FOREIGN KEY", "ENFORCED": "YES"}
+{"CONSTRAINT_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orderdetails", "CONSTRAINT_NAME": "PRIMARY", "CONSTRAINT_TYPE": "PRIMARY KEY", "ENFORCED": "YES"}
+{"CONSTRAINT_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orders", "CONSTRAINT_NAME": "orders_ibfk_1", "CONSTRAINT_TYPE": "FOREIGN KEY", "ENFORCED": "YES"}
+{"CONSTRAINT_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orders", "CONSTRAINT_NAME": "PRIMARY", "CONSTRAINT_TYPE": "PRIMARY KEY", "ENFORCED": "YES"}
+{"CONSTRAINT_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "payments", "CONSTRAINT_NAME": "payments_ibfk_1", "CONSTRAINT_TYPE": "FOREIGN KEY", "ENFORCED": "YES"}
+{"CONSTRAINT_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "payments", "CONSTRAINT_NAME": "PRIMARY", "CONSTRAINT_TYPE": "PRIMARY KEY", "ENFORCED": "YES"}
+{"CONSTRAINT_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "productlines", "CONSTRAINT_NAME": "PRIMARY", "CONSTRAINT_TYPE": "PRIMARY KEY", "ENFORCED": "YES"}
+{"CONSTRAINT_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "products", "CONSTRAINT_NAME": "PRIMARY", "CONSTRAINT_TYPE": "PRIMARY KEY", "ENFORCED": "YES"}
+{"CONSTRAINT_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "products", "CONSTRAINT_NAME": "products_ibfk_1", "CONSTRAINT_TYPE": "FOREIGN KEY", "ENFORCED": "YES"}
+
+
+--------------------------------------------
+check_constraint:0
+--------------------------------------------
+
+
+
+--------------------------------------------
+referential_constraint:8
+--------------------------------------------
+{"CONSTRAINT_CATALOG": "def", "CONSTRAINT_SCHEMA": "classicmodels", "CONSTRAINT_NAME": "customers_ibfk_1", "UNIQUE_CONSTRAINT_CATALOG": "def", "UNIQUE_CONSTRAINT_SCHEMA": "classicmodels", "UNIQUE_CONSTRAINT_NAME": "PRIMARY", "TABLE_NAME": "customers", "REFERENCED_TABLE_NAME": "employees", "MATCH_OPTION": "NONE", "UPDATE_RULE": "NO ACTION", "DELETE_RULE": "NO ACTION"}
+{"CONSTRAINT_CATALOG": "def", "CONSTRAINT_SCHEMA": "classicmodels", "CONSTRAINT_NAME": "employees_ibfk_1", "UNIQUE_CONSTRAINT_CATALOG": "def", "UNIQUE_CONSTRAINT_SCHEMA": "classicmodels", "UNIQUE_CONSTRAINT_NAME": "PRIMARY", "TABLE_NAME": "employees", "REFERENCED_TABLE_NAME": "employees", "MATCH_OPTION": "NONE", "UPDATE_RULE": "NO ACTION", "DELETE_RULE": "NO ACTION"}
+{"CONSTRAINT_CATALOG": "def", "CONSTRAINT_SCHEMA": "classicmodels", "CONSTRAINT_NAME": "employees_ibfk_2", "UNIQUE_CONSTRAINT_CATALOG": "def", "UNIQUE_CONSTRAINT_SCHEMA": "classicmodels", "UNIQUE_CONSTRAINT_NAME": "PRIMARY", "TABLE_NAME": "employees", "REFERENCED_TABLE_NAME": "offices", "MATCH_OPTION": "NONE", "UPDATE_RULE": "NO ACTION", "DELETE_RULE": "NO ACTION"}
+{"CONSTRAINT_CATALOG": "def", "CONSTRAINT_SCHEMA": "classicmodels", "CONSTRAINT_NAME": "orderdetails_ibfk_1", "UNIQUE_CONSTRAINT_CATALOG": "def", "UNIQUE_CONSTRAINT_SCHEMA": "classicmodels", "UNIQUE_CONSTRAINT_NAME": "PRIMARY", "TABLE_NAME": "orderdetails", "REFERENCED_TABLE_NAME": "orders", "MATCH_OPTION": "NONE", "UPDATE_RULE": "NO ACTION", "DELETE_RULE": "NO ACTION"}
+{"CONSTRAINT_CATALOG": "def", "CONSTRAINT_SCHEMA": "classicmodels", "CONSTRAINT_NAME": "orderdetails_ibfk_2", "UNIQUE_CONSTRAINT_CATALOG": "def", "UNIQUE_CONSTRAINT_SCHEMA": "classicmodels", "UNIQUE_CONSTRAINT_NAME": "PRIMARY", "TABLE_NAME": "orderdetails", "REFERENCED_TABLE_NAME": "products", "MATCH_OPTION": "NONE", "UPDATE_RULE": "NO ACTION", "DELETE_RULE": "NO ACTION"}
+{"CONSTRAINT_CATALOG": "def", "CONSTRAINT_SCHEMA": "classicmodels", "CONSTRAINT_NAME": "orders_ibfk_1", "UNIQUE_CONSTRAINT_CATALOG": "def", "UNIQUE_CONSTRAINT_SCHEMA": "classicmodels", "UNIQUE_CONSTRAINT_NAME": "PRIMARY", "TABLE_NAME": "orders", "REFERENCED_TABLE_NAME": "customers", "MATCH_OPTION": "NONE", "UPDATE_RULE": "NO ACTION", "DELETE_RULE": "NO ACTION"}
+{"CONSTRAINT_CATALOG": "def", "CONSTRAINT_SCHEMA": "classicmodels", "CONSTRAINT_NAME": "payments_ibfk_1", "UNIQUE_CONSTRAINT_CATALOG": "def", "UNIQUE_CONSTRAINT_SCHEMA": "classicmodels", "UNIQUE_CONSTRAINT_NAME": "PRIMARY", "TABLE_NAME": "payments", "REFERENCED_TABLE_NAME": "customers", "MATCH_OPTION": "NONE", "UPDATE_RULE": "NO ACTION", "DELETE_RULE": "NO ACTION"}
+{"CONSTRAINT_CATALOG": "def", "CONSTRAINT_SCHEMA": "classicmodels", "CONSTRAINT_NAME": "products_ibfk_1", "UNIQUE_CONSTRAINT_CATALOG": "def", "UNIQUE_CONSTRAINT_SCHEMA": "classicmodels", "UNIQUE_CONSTRAINT_NAME": "PRIMARY", "TABLE_NAME": "products", "REFERENCED_TABLE_NAME": "productlines", "MATCH_OPTION": "NONE", "UPDATE_RULE": "NO ACTION", "DELETE_RULE": "NO ACTION"}
+
+
+--------------------------------------------
+key_usage:18
+--------------------------------------------
+{"CONSTRAINT_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "customers", "COLUMN_NAME": "customerNumber", "CONSTRAINT_NAME": "PRIMARY", "POSITION_IN_UNIQUE_CONSTRAINT": null, "REFERENCED_TABLE_SCHEMA": null, "REFERENCED_TABLE_NAME": null, "REFERENCED_COLUMN_NAME": null}
+{"CONSTRAINT_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "customers", "COLUMN_NAME": "salesRepEmployeeNumber", "CONSTRAINT_NAME": "customers_ibfk_1", "POSITION_IN_UNIQUE_CONSTRAINT": 1, "REFERENCED_TABLE_SCHEMA": "classicmodels", "REFERENCED_TABLE_NAME": "employees", "REFERENCED_COLUMN_NAME": "employeeNumber"}
+{"CONSTRAINT_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "employees", "COLUMN_NAME": "employeeNumber", "CONSTRAINT_NAME": "PRIMARY", "POSITION_IN_UNIQUE_CONSTRAINT": null, "REFERENCED_TABLE_SCHEMA": null, "REFERENCED_TABLE_NAME": null, "REFERENCED_COLUMN_NAME": null}
+{"CONSTRAINT_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "employees", "COLUMN_NAME": "officeCode", "CONSTRAINT_NAME": "employees_ibfk_2", "POSITION_IN_UNIQUE_CONSTRAINT": 1, "REFERENCED_TABLE_SCHEMA": "classicmodels", "REFERENCED_TABLE_NAME": "offices", "REFERENCED_COLUMN_NAME": "officeCode"}
+{"CONSTRAINT_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "employees", "COLUMN_NAME": "reportsTo", "CONSTRAINT_NAME": "employees_ibfk_1", "POSITION_IN_UNIQUE_CONSTRAINT": 1, "REFERENCED_TABLE_SCHEMA": "classicmodels", "REFERENCED_TABLE_NAME": "employees", "REFERENCED_COLUMN_NAME": "employeeNumber"}
+{"CONSTRAINT_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "offices", "COLUMN_NAME": "officeCode", "CONSTRAINT_NAME": "PRIMARY", "POSITION_IN_UNIQUE_CONSTRAINT": null, "REFERENCED_TABLE_SCHEMA": null, "REFERENCED_TABLE_NAME": null, "REFERENCED_COLUMN_NAME": null}
+{"CONSTRAINT_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orderdetails", "COLUMN_NAME": "orderNumber", "CONSTRAINT_NAME": "orderdetails_ibfk_1", "POSITION_IN_UNIQUE_CONSTRAINT": 1, "REFERENCED_TABLE_SCHEMA": "classicmodels", "REFERENCED_TABLE_NAME": "orders", "REFERENCED_COLUMN_NAME": "orderNumber"}
+{"CONSTRAINT_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orderdetails", "COLUMN_NAME": "orderNumber", "CONSTRAINT_NAME": "PRIMARY", "POSITION_IN_UNIQUE_CONSTRAINT": null, "REFERENCED_TABLE_SCHEMA": null, "REFERENCED_TABLE_NAME": null, "REFERENCED_COLUMN_NAME": null}
+{"CONSTRAINT_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orderdetails", "COLUMN_NAME": "productCode", "CONSTRAINT_NAME": "orderdetails_ibfk_2", "POSITION_IN_UNIQUE_CONSTRAINT": 1, "REFERENCED_TABLE_SCHEMA": "classicmodels", "REFERENCED_TABLE_NAME": "products", "REFERENCED_COLUMN_NAME": "productCode"}
+{"CONSTRAINT_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orderdetails", "COLUMN_NAME": "productCode", "CONSTRAINT_NAME": "PRIMARY", "POSITION_IN_UNIQUE_CONSTRAINT": null, "REFERENCED_TABLE_SCHEMA": null, "REFERENCED_TABLE_NAME": null, "REFERENCED_COLUMN_NAME": null}
+{"CONSTRAINT_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orders", "COLUMN_NAME": "customerNumber", "CONSTRAINT_NAME": "orders_ibfk_1", "POSITION_IN_UNIQUE_CONSTRAINT": 1, "REFERENCED_TABLE_SCHEMA": "classicmodels", "REFERENCED_TABLE_NAME": "customers", "REFERENCED_COLUMN_NAME": "customerNumber"}
+{"CONSTRAINT_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orders", "COLUMN_NAME": "orderNumber", "CONSTRAINT_NAME": "PRIMARY", "POSITION_IN_UNIQUE_CONSTRAINT": null, "REFERENCED_TABLE_SCHEMA": null, "REFERENCED_TABLE_NAME": null, "REFERENCED_COLUMN_NAME": null}
+{"CONSTRAINT_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "payments", "COLUMN_NAME": "checkNumber", "CONSTRAINT_NAME": "PRIMARY", "POSITION_IN_UNIQUE_CONSTRAINT": null, "REFERENCED_TABLE_SCHEMA": null, "REFERENCED_TABLE_NAME": null, "REFERENCED_COLUMN_NAME": null}
+{"CONSTRAINT_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "payments", "COLUMN_NAME": "customerNumber", "CONSTRAINT_NAME": "payments_ibfk_1", "POSITION_IN_UNIQUE_CONSTRAINT": 1, "REFERENCED_TABLE_SCHEMA": "classicmodels", "REFERENCED_TABLE_NAME": "customers", "REFERENCED_COLUMN_NAME": "customerNumber"}
+{"CONSTRAINT_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "payments", "COLUMN_NAME": "customerNumber", "CONSTRAINT_NAME": "PRIMARY", "POSITION_IN_UNIQUE_CONSTRAINT": null, "REFERENCED_TABLE_SCHEMA": null, "REFERENCED_TABLE_NAME": null, "REFERENCED_COLUMN_NAME": null}
+{"CONSTRAINT_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "productlines", "COLUMN_NAME": "productLine", "CONSTRAINT_NAME": "PRIMARY", "POSITION_IN_UNIQUE_CONSTRAINT": null, "REFERENCED_TABLE_SCHEMA": null, "REFERENCED_TABLE_NAME": null, "REFERENCED_COLUMN_NAME": null}
+{"CONSTRAINT_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "products", "COLUMN_NAME": "productCode", "CONSTRAINT_NAME": "PRIMARY", "POSITION_IN_UNIQUE_CONSTRAINT": null, "REFERENCED_TABLE_SCHEMA": null, "REFERENCED_TABLE_NAME": null, "REFERENCED_COLUMN_NAME": null}
+{"CONSTRAINT_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "products", "COLUMN_NAME": "productLine", "CONSTRAINT_NAME": "products_ibfk_1", "POSITION_IN_UNIQUE_CONSTRAINT": 1, "REFERENCED_TABLE_SCHEMA": "classicmodels", "REFERENCED_TABLE_NAME": "productlines", "REFERENCED_COLUMN_NAME": "productLine"}
+
+
+--------------------------------------------
+index:16
+--------------------------------------------
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "customers", "COLUMN_NAME": "customerNumber", "SEQ_IN_INDEX": 1, "INDEX_NAME": "PRIMARY", "NON_UNIQUE": 0, "COLLATION": "A", "PACKED": null, "NULLABLE": "", "INDEX_TYPE": "BTREE", "IS_VISIBLE": "YES", "EXPRESSION": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "customers", "COLUMN_NAME": "salesRepEmployeeNumber", "SEQ_IN_INDEX": 1, "INDEX_NAME": "salesRepEmployeeNumber", "NON_UNIQUE": 1, "COLLATION": "A", "PACKED": null, "NULLABLE": "YES", "INDEX_TYPE": "BTREE", "IS_VISIBLE": "YES", "EXPRESSION": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "employees", "COLUMN_NAME": "employeeNumber", "SEQ_IN_INDEX": 1, "INDEX_NAME": "PRIMARY", "NON_UNIQUE": 0, "COLLATION": "A", "PACKED": null, "NULLABLE": "", "INDEX_TYPE": "BTREE", "IS_VISIBLE": "YES", "EXPRESSION": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "employees", "COLUMN_NAME": "officeCode", "SEQ_IN_INDEX": 1, "INDEX_NAME": "officeCode", "NON_UNIQUE": 1, "COLLATION": "A", "PACKED": null, "NULLABLE": "", "INDEX_TYPE": "BTREE", "IS_VISIBLE": "YES", "EXPRESSION": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "employees", "COLUMN_NAME": "reportsTo", "SEQ_IN_INDEX": 1, "INDEX_NAME": "reportsTo", "NON_UNIQUE": 1, "COLLATION": "A", "PACKED": null, "NULLABLE": "YES", "INDEX_TYPE": "BTREE", "IS_VISIBLE": "YES", "EXPRESSION": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "offices", "COLUMN_NAME": "officeCode", "SEQ_IN_INDEX": 1, "INDEX_NAME": "PRIMARY", "NON_UNIQUE": 0, "COLLATION": "A", "PACKED": null, "NULLABLE": "", "INDEX_TYPE": "BTREE", "IS_VISIBLE": "YES", "EXPRESSION": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orderdetails", "COLUMN_NAME": "orderNumber", "SEQ_IN_INDEX": 1, "INDEX_NAME": "PRIMARY", "NON_UNIQUE": 0, "COLLATION": "A", "PACKED": null, "NULLABLE": "", "INDEX_TYPE": "BTREE", "IS_VISIBLE": "YES", "EXPRESSION": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orderdetails", "COLUMN_NAME": "productCode", "SEQ_IN_INDEX": 1, "INDEX_NAME": "productCode", "NON_UNIQUE": 1, "COLLATION": "A", "PACKED": null, "NULLABLE": "", "INDEX_TYPE": "BTREE", "IS_VISIBLE": "YES", "EXPRESSION": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orderdetails", "COLUMN_NAME": "productCode", "SEQ_IN_INDEX": 2, "INDEX_NAME": "PRIMARY", "NON_UNIQUE": 0, "COLLATION": "A", "PACKED": null, "NULLABLE": "", "INDEX_TYPE": "BTREE", "IS_VISIBLE": "YES", "EXPRESSION": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orders", "COLUMN_NAME": "customerNumber", "SEQ_IN_INDEX": 1, "INDEX_NAME": "customerNumber", "NON_UNIQUE": 1, "COLLATION": "A", "PACKED": null, "NULLABLE": "", "INDEX_TYPE": "BTREE", "IS_VISIBLE": "YES", "EXPRESSION": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "orders", "COLUMN_NAME": "orderNumber", "SEQ_IN_INDEX": 1, "INDEX_NAME": "PRIMARY", "NON_UNIQUE": 0, "COLLATION": "A", "PACKED": null, "NULLABLE": "", "INDEX_TYPE": "BTREE", "IS_VISIBLE": "YES", "EXPRESSION": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "payments", "COLUMN_NAME": "checkNumber", "SEQ_IN_INDEX": 2, "INDEX_NAME": "PRIMARY", "NON_UNIQUE": 0, "COLLATION": "A", "PACKED": null, "NULLABLE": "", "INDEX_TYPE": "BTREE", "IS_VISIBLE": "YES", "EXPRESSION": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "payments", "COLUMN_NAME": "customerNumber", "SEQ_IN_INDEX": 1, "INDEX_NAME": "PRIMARY", "NON_UNIQUE": 0, "COLLATION": "A", "PACKED": null, "NULLABLE": "", "INDEX_TYPE": "BTREE", "IS_VISIBLE": "YES", "EXPRESSION": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "productlines", "COLUMN_NAME": "productLine", "SEQ_IN_INDEX": 1, "INDEX_NAME": "PRIMARY", "NON_UNIQUE": 0, "COLLATION": "A", "PACKED": null, "NULLABLE": "", "INDEX_TYPE": "BTREE", "IS_VISIBLE": "YES", "EXPRESSION": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "products", "COLUMN_NAME": "productCode", "SEQ_IN_INDEX": 1, "INDEX_NAME": "PRIMARY", "NON_UNIQUE": 0, "COLLATION": "A", "PACKED": null, "NULLABLE": "", "INDEX_TYPE": "BTREE", "IS_VISIBLE": "YES", "EXPRESSION": null}
+{"TABLE_CATALOG": "def", "TABLE_SCHEMA": "classicmodels", "TABLE_NAME": "products", "COLUMN_NAME": "productLine", "SEQ_IN_INDEX": 1, "INDEX_NAME": "productLine", "NON_UNIQUE": 1, "COLLATION": "A", "PACKED": null, "NULLABLE": "", "INDEX_TYPE": "BTREE", "IS_VISIBLE": "YES", "EXPRESSION": null}
+
+
+--------------------------------------------
+routine:1
+--------------------------------------------
+{"SPECIFIC_NAME": "HelloWorld", "ROUTINE_CATALOG": "def", "ROUTINE_SCHEMA": "classicmodels", "ROUTINE_NAME": "HelloWorld", "ROUTINE_TYPE": "PROCEDURE", "DATA_TYPE": "", "CHARACTER_MAXIMUM_LENGTH": null, "CHARACTER_OCTET_LENGTH": null, "NUMERIC_PRECISION": null, "NUMERIC_SCALE": null, "DATETIME_PRECISION": null, "CHARACTER_SET_NAME": null, "COLLATION_NAME": null, "DTD_IDENTIFIER": null, "ROUTINE_BODY": "SQL", "EXTERNAL_NAME": null, "EXTERNAL_LANGUAGE": "SQL", "PARAMETER_STYLE": "SQL", "IS_DETERMINISTIC": "NO", "ROUTINE_DEFINITION": "BEGIN\r\n    SELECT CONCAT('Hello: ', user_name, '!') AS greeting;\r\nEND"}
+
+
+--------------------------------------------
+trigger:0
+--------------------------------------------
+
+
+
+--------------------------------------------
+view:0
+--------------------------------------------
+
+
+
+--------------------------------------------
+customers:122
+--------------------------------------------
+{"customerNumber": 103, "customerName": "Atelier graphique"}
+{"customerNumber": 112, "customerName": "Signal Gift Stores"}
+{"customerNumber": 114, "customerName": "Australian Collectors, Co."}
+{"customerNumber": 119, "customerName": "La Rochelle Gifts"}
+{"customerNumber": 121, "customerName": "Baane Mini Imports"}
+{"customerNumber": 124, "customerName": "Mini Gifts Distributors Ltd."}
+{"customerNumber": 125, "customerName": "Havel & Zbyszek Co"}
+{"customerNumber": 128, "customerName": "Blauer See Auto, Co."}
+{"customerNumber": 129, "customerName": "Mini Wheels Co."}
+{"customerNumber": 131, "customerName": "Land of Toys Inc."}
+{"customerNumber": 141, "customerName": "Euro+ Shopping Channel"}
+{"customerNumber": 144, "customerName": "Volvo Model Replicas, Co"}
+{"customerNumber": 145, "customerName": "Danish Wholesale Imports"}
+{"customerNumber": 146, "customerName": "Saveley & Henriot, Co."}
+{"customerNumber": 148, "customerName": "Dragon Souveniers, Ltd."}
+{"customerNumber": 151, "customerName": "Muscle Machine Inc"}
+{"customerNumber": 157, "customerName": "Diecast Classics Inc."}
+{"customerNumber": 161, "customerName": "Technics Stores Inc."}
+{"customerNumber": 166, "customerName": "Handji Gifts& Co"}
+{"customerNumber": 167, "customerName": "Herkku Gifts"}
+{"customerNumber": 168, "customerName": "American Souvenirs Inc"}
+{"customerNumber": 169, "customerName": "Porto Imports Co."}
+{"customerNumber": 171, "customerName": "Daedalus Designs Imports"}
+{"customerNumber": 172, "customerName": "La Corne D'abondance, Co."}
+{"customerNumber": 173, "customerName": "Cambridge Collectables Co."}
+{"customerNumber": 175, "customerName": "Gift Depot Inc."}
+{"customerNumber": 177, "customerName": "Osaka Souveniers Co."}
+{"customerNumber": 181, "customerName": "Vitachrome Inc."}
+{"customerNumber": 186, "customerName": "Toys of Finland, Co."}
+{"customerNumber": 187, "customerName": "AV Stores, Co."}
+{"customerNumber": 189, "customerName": "Clover Collections, Co."}
+{"customerNumber": 198, "customerName": "Auto-Moto Classics Inc."}
+{"customerNumber": 201, "customerName": "UK Collectables, Ltd."}
+{"customerNumber": 202, "customerName": "Canadian Gift Exchange Network"}
+{"customerNumber": 204, "customerName": "Online Mini Collectables"}
+{"customerNumber": 205, "customerName": "Toys4GrownUps.com"}
+{"customerNumber": 206, "customerName": "Asian Shopping Network, Co"}
+{"customerNumber": 209, "customerName": "Mini Caravy"}
+{"customerNumber": 211, "customerName": "King Kong Collectables, Co."}
+{"customerNumber": 216, "customerName": "Enaco Distributors"}
+{"customerNumber": 219, "customerName": "Boards & Toys Co."}
+{"customerNumber": 223, "customerName": "Nat\u00fcrlich Autos"}
+{"customerNumber": 227, "customerName": "Heintze Collectables"}
+{"customerNumber": 233, "customerName": "Qu\u00e9bec Home Shopping Network"}
+{"customerNumber": 237, "customerName": "ANG Resellers"}
+{"customerNumber": 239, "customerName": "Collectable Mini Designs Co."}
+{"customerNumber": 240, "customerName": "giftsbymail.co.uk"}
+{"customerNumber": 242, "customerName": "Alpha Cognac"}
+{"customerNumber": 247, "customerName": "Messner Shopping Network"}
+{"customerNumber": 249, "customerName": "Amica Models & Co."}
+{"customerNumber": 250, "customerName": "Lyon Souveniers"}
+{"customerNumber": 256, "customerName": "Auto Associ\u00e9s & Cie."}
+{"customerNumber": 259, "customerName": "Toms Spezialit\u00e4ten, Ltd"}
+{"customerNumber": 260, "customerName": "Royal Canadian Collectables, Ltd."}
+{"customerNumber": 273, "customerName": "Franken Gifts, Co"}
+{"customerNumber": 276, "customerName": "Anna's Decorations, Ltd"}
+{"customerNumber": 278, "customerName": "Rovelli Gifts"}
+{"customerNumber": 282, "customerName": "Souveniers And Things Co."}
+{"customerNumber": 286, "customerName": "Marta's Replicas Co."}
+{"customerNumber": 293, "customerName": "BG&E Collectables"}
+{"customerNumber": 298, "customerName": "Vida Sport, Ltd"}
+{"customerNumber": 299, "customerName": "Norway Gifts By Mail, Co."}
+{"customerNumber": 303, "customerName": "Schuyler Imports"}
+{"customerNumber": 307, "customerName": "Der Hund Imports"}
+{"customerNumber": 311, "customerName": "Oulu Toy Supplies, Inc."}
+{"customerNumber": 314, "customerName": "Petit Auto"}
+{"customerNumber": 319, "customerName": "Mini Classics"}
+{"customerNumber": 320, "customerName": "Mini Creations Ltd."}
+{"customerNumber": 321, "customerName": "Corporate Gift Ideas Co."}
+{"customerNumber": 323, "customerName": "Down Under Souveniers, Inc"}
+{"customerNumber": 324, "customerName": "Stylish Desk Decors, Co."}
+{"customerNumber": 328, "customerName": "Tekni Collectables Inc."}
+{"customerNumber": 333, "customerName": "Australian Gift Network, Co"}
+{"customerNumber": 334, "customerName": "Suominen Souveniers"}
+{"customerNumber": 335, "customerName": "Cramer Spezialit\u00e4ten, Ltd"}
+{"customerNumber": 339, "customerName": "Classic Gift Ideas, Inc"}
+{"customerNumber": 344, "customerName": "CAF Imports"}
+{"customerNumber": 347, "customerName": "Men 'R' US Retailers, Ltd."}
+{"customerNumber": 348, "customerName": "Asian Treasures, Inc."}
+{"customerNumber": 350, "customerName": "Marseille Mini Autos"}
+{"customerNumber": 353, "customerName": "Reims Collectables"}
+{"customerNumber": 356, "customerName": "SAR Distributors, Co"}
+{"customerNumber": 357, "customerName": "GiftsForHim.com"}
+{"customerNumber": 361, "customerName": "Kommission Auto"}
+{"customerNumber": 362, "customerName": "Gifts4AllAges.com"}
+{"customerNumber": 363, "customerName": "Online Diecast Creations Co."}
+{"customerNumber": 369, "customerName": "Lisboa Souveniers, Inc"}
+{"customerNumber": 376, "customerName": "Precious Collectables"}
+{"customerNumber": 379, "customerName": "Collectables For Less Inc."}
+{"customerNumber": 381, "customerName": "Royale Belge"}
+{"customerNumber": 382, "customerName": "Salzburg Collectables"}
+{"customerNumber": 385, "customerName": "Cruz & Sons Co."}
+{"customerNumber": 386, "customerName": "L'ordine Souveniers"}
+{"customerNumber": 398, "customerName": "Tokyo Collectables, Ltd"}
+{"customerNumber": 406, "customerName": "Auto Canal+ Petit"}
+{"customerNumber": 409, "customerName": "Stuttgart Collectable Exchange"}
+{"customerNumber": 412, "customerName": "Extreme Desk Decorations, Ltd"}
+{"customerNumber": 415, "customerName": "Bavarian Collectables Imports, Co."}
+{"customerNumber": 424, "customerName": "Classic Legends Inc."}
+{"customerNumber": 443, "customerName": "Feuer Online Stores, Inc"}
+{"customerNumber": 447, "customerName": "Gift Ideas Corp."}
+{"customerNumber": 448, "customerName": "Scandinavian Gift Ideas"}
+{"customerNumber": 450, "customerName": "The Sharp Gifts Warehouse"}
+{"customerNumber": 452, "customerName": "Mini Auto Werke"}
+{"customerNumber": 455, "customerName": "Super Scale Inc."}
+{"customerNumber": 456, "customerName": "Microscale Inc."}
+{"customerNumber": 458, "customerName": "Corrida Auto Replicas, Ltd"}
+{"customerNumber": 459, "customerName": "Warburg Exchange"}
+{"customerNumber": 462, "customerName": "FunGiftIdeas.com"}
+{"customerNumber": 465, "customerName": "Anton Designs, Ltd."}
+{"customerNumber": 471, "customerName": "Australian Collectables, Ltd"}
+{"customerNumber": 473, "customerName": "Frau da Collezione"}
+{"customerNumber": 475, "customerName": "West Coast Collectables Co."}
+{"customerNumber": 477, "customerName": "Mit Vergn\u00fcgen & Co."}
+{"customerNumber": 480, "customerName": "Kremlin Collectables, Co."}
+{"customerNumber": 481, "customerName": "Raanan Stores, Inc"}
+{"customerNumber": 484, "customerName": "Iberia Gift Imports, Corp."}
+{"customerNumber": 486, "customerName": "Motor Mint Distributors Inc."}
+{"customerNumber": 487, "customerName": "Signal Collectibles Ltd."}
+{"customerNumber": 489, "customerName": "Double Decker Gift Stores, Ltd"}
+{"customerNumber": 495, "customerName": "Diecast Collectables"}
+{"customerNumber": 496, "customerName": "Kelly's Gift Shop"}

@@ -15,3 +15,4 @@ with open("dbversion_hash.txt", 'w', newline='') as file:
     file.write(hash)
 
 pass
+
