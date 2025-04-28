@@ -12,7 +12,10 @@ Additionally, it will create a SHA256 hash of the database version report.
 
 For sample reports, please refer to `dbversion_report.txt` and `dbversion_hash.txt`.
 
-Currently, it only supports MySQL databases (using `mysql_dbversion.py` and `mysql_main.py`) as well as MS SQL databases (using `mssql_dbversion.py` and `mssql_main.py`).
+Currently, it only supports 
+* MySQL databases (using `mysql_dbversion.py` and `mysql_main.py`) 
+* MS SQL databases (using `mssql_dbversion.py` and `mssql_main.py`) 
+* PostgreSQL databases (using `pgsql_dbversion.py` and `pgsql_main.py`) 
 
 ## Use Cases
 
