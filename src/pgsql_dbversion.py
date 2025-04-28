@@ -64,7 +64,7 @@ class Dbversion:
     
     def calculate_hash(self, text):
         # Create a new hash object using the specified algorithm
-        algorithm='sha1'
+        algorithm='sha256'
         hash_object = hashlib.new(algorithm)
         
         # Update the hash object with the bytes of the text
