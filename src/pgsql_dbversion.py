@@ -154,6 +154,7 @@ ORDER BY c.grantee, c.role_name, c.is_grantable;
 """
 SELECT c.udt_catalog, c.udt_schema, c.udt_name, c.attribute_name, c.ordinal_position, c.attribute_default, c.is_nullable, c.data_type, c.character_maximum_length, c.character_octet_length, c.character_set_catalog, c.character_set_schema, c.character_set_name, c.collation_catalog, c.collation_schema, c.collation_name, c.numeric_precision, c.numeric_precision_radix, c.numeric_scale, c.datetime_precision, c.interval_type, c.interval_precision, c.attribute_udt_catalog, c.attribute_udt_schema, c.attribute_udt_name, c.scope_catalog, c.scope_schema, c.scope_name, c.maximum_cardinality, c.dtd_identifier, c.is_derived_reference_attribute
 FROM information_schema.attributes c
+where c.udt_name not like '\_\_%'
 ORDER BY c.udt_catalog, c.udt_schema, c.udt_name, c.attribute_name, c.ordinal_position, c.attribute_default, c.is_nullable, c.data_type, c.character_maximum_length, c.character_octet_length, c.character_set_catalog, c.character_set_schema, c.character_set_name, c.collation_catalog, c.collation_schema, c.collation_name, c.numeric_precision, c.numeric_precision_radix, c.numeric_scale, c.datetime_precision, c.interval_type, c.interval_precision, c.attribute_udt_catalog, c.attribute_udt_schema, c.attribute_udt_name, c.scope_catalog, c.scope_schema, c.scope_name, c.maximum_cardinality, c.dtd_identifier, c.is_derived_reference_attribute;
 """
 , 
@@ -249,6 +250,7 @@ FROM information_schema.column_udt_usage c
 WHERE table_schema =  %schema_name
 and c.TABLE_NAME not like '\_\_%'
 And c.COLUMN_NAME not like '\_\_%'
+and c.udt_name not like '\_\_%'
 ORDER BY c.udt_catalog, c.udt_schema, c.udt_name, c.table_catalog, c.table_schema, c.table_name, c.column_name;
 """
 , 
@@ -260,6 +262,7 @@ FROM information_schema.columns c
 WHERE table_schema =  %schema_name
 and c.TABLE_NAME not like '\_\_%'
 And c.COLUMN_NAME not like '\_\_%'
+and c.udt_name not like '\_\_%'
 ORDER BY c.table_catalog, c.table_schema, c.table_name, c.column_name, c.ordinal_position, c.column_default, c.is_nullable, c.data_type, c.character_maximum_length, c.character_octet_length, c.numeric_precision, c.numeric_precision_radix, c.numeric_scale, c.datetime_precision, c.interval_type, c.interval_precision, c.character_set_catalog, c.character_set_schema, c.character_set_name, c.collation_catalog, c.collation_schema, c.collation_name, c.domain_catalog, c.domain_schema, c.domain_name, c.udt_catalog, c.udt_schema, c.udt_name, c.scope_catalog, c.scope_schema, c.scope_name, c.maximum_cardinality, c.dtd_identifier, c.is_self_referencing, c.is_identity, c.identity_generation, c.identity_start, c.identity_increment, c.identity_maximum, c.identity_minimum, c.identity_cycle, c.is_generated, c.generation_expression, c.is_updatable;
 """
 , 
@@ -289,6 +292,7 @@ ORDER BY c.table_catalog, c.table_schema, c.table_name, c.constraint_catalog, c.
 """
 SELECT c.object_catalog, c.object_schema, c.object_name, c.object_type, c.dtd_identifier
 FROM information_schema.data_type_privileges c
+where c.object_name not like '\_\_%'
 ORDER BY c.object_catalog, c.object_schema, c.object_name, c.object_type, c.dtd_identifier;
 """
 , 
@@ -305,6 +309,7 @@ ORDER BY c.constraint_catalog, c.constraint_schema, c.constraint_name, c.domain_
 """
 SELECT c.udt_catalog, c.udt_schema, c.udt_name, c.domain_catalog, c.domain_schema, c.domain_name
 FROM information_schema.domain_udt_usage c
+where c.udt_name not like '\_\_%'
 ORDER BY c.udt_catalog, c.udt_schema, c.udt_name, c.domain_catalog, c.domain_schema, c.domain_name;
 """
 , 
@@ -313,6 +318,7 @@ ORDER BY c.udt_catalog, c.udt_schema, c.udt_name, c.domain_catalog, c.domain_sch
 """
 SELECT c.domain_catalog, c.domain_schema, c.domain_name, c.data_type, c.character_maximum_length, c.character_octet_length, c.character_set_catalog, c.character_set_schema, c.character_set_name, c.collation_catalog, c.collation_schema, c.collation_name, c.numeric_precision, c.numeric_precision_radix, c.numeric_scale, c.datetime_precision, c.interval_type, c.interval_precision, c.domain_default, c.udt_catalog, c.udt_schema, c.udt_name, c.scope_catalog, c.scope_schema, c.scope_name, c.maximum_cardinality, c.dtd_identifier
 FROM information_schema.domains c
+where c.udt_name not like '\_\_%'
 ORDER BY c.domain_catalog, c.domain_schema, c.domain_name, c.data_type, c.character_maximum_length, c.character_octet_length, c.character_set_catalog, c.character_set_schema, c.character_set_name, c.collation_catalog, c.collation_schema, c.collation_name, c.numeric_precision, c.numeric_precision_radix, c.numeric_scale, c.datetime_precision, c.interval_type, c.interval_precision, c.domain_default, c.udt_catalog, c.udt_schema, c.udt_name, c.scope_catalog, c.scope_schema, c.scope_name, c.maximum_cardinality, c.dtd_identifier;
 """
 , 
@@ -321,6 +327,8 @@ ORDER BY c.domain_catalog, c.domain_schema, c.domain_name, c.data_type, c.charac
 """
 SELECT c.object_catalog, c.object_schema, c.object_name, c.object_type, c.collection_type_identifier, c.data_type, c.character_maximum_length, c.character_octet_length, c.character_set_catalog, c.character_set_schema, c.character_set_name, c.collation_catalog, c.collation_schema, c.collation_name, c.numeric_precision, c.numeric_precision_radix, c.numeric_scale, c.datetime_precision, c.interval_type, c.interval_precision, c.domain_default, c.udt_catalog, c.udt_schema, c.udt_name, c.scope_catalog, c.scope_schema, c.scope_name, c.maximum_cardinality, c.dtd_identifier
 FROM information_schema.element_types c
+where c.object_name not like '\_\_%'
+and c.udt_name not like '\_\_%'
 ORDER BY c.object_catalog, c.object_schema, c.object_name, c.object_type, c.collection_type_identifier, c.data_type, c.character_maximum_length, c.character_octet_length, c.character_set_catalog, c.character_set_schema, c.character_set_name, c.collation_catalog, c.collation_schema, c.collation_name, c.numeric_precision, c.numeric_precision_radix, c.numeric_scale, c.datetime_precision, c.interval_type, c.interval_precision, c.domain_default, c.udt_catalog, c.udt_schema, c.udt_name, c.scope_catalog, c.scope_schema, c.scope_name, c.maximum_cardinality, c.dtd_identifier;
 """
 , 
@@ -404,6 +412,7 @@ ORDER BY c.constraint_catalog, c.constraint_schema, c.constraint_name, c.table_c
 """
 SELECT c.specific_catalog, c.specific_schema, c.specific_name, c.ordinal_position, c.parameter_mode, c.is_result, c.as_locator, c.parameter_name, c.data_type, c.character_maximum_length, c.character_octet_length, c.character_set_catalog, c.character_set_schema, c.character_set_name, c.collation_catalog, c.collation_schema, c.collation_name, c.numeric_precision, c.numeric_precision_radix, c.numeric_scale, c.datetime_precision, c.interval_type, c.interval_precision, c.udt_catalog, c.udt_schema, c.udt_name, c.scope_catalog, c.scope_schema, c.scope_name, c.maximum_cardinality, c.dtd_identifier, c.parameter_default
 FROM information_schema.parameters c
+where c.udt_name not like '\_\_%'
 ORDER BY c.specific_catalog, c.specific_schema, c.specific_name, c.ordinal_position, c.parameter_mode, c.is_result, c.as_locator, c.parameter_name, c.data_type, c.character_maximum_length, c.character_octet_length, c.character_set_catalog, c.character_set_schema, c.character_set_name, c.collation_catalog, c.collation_schema, c.collation_name, c.numeric_precision, c.numeric_precision_radix, c.numeric_scale, c.datetime_precision, c.interval_type, c.interval_precision, c.udt_catalog, c.udt_schema, c.udt_name, c.scope_catalog, c.scope_schema, c.scope_name, c.maximum_cardinality, c.dtd_identifier, c.parameter_default;
 """
 , 
@@ -449,6 +458,7 @@ ORDER BY c.grantor, c.grantee, c.table_catalog, c.table_schema, c.table_name, c.
 """
 SELECT c.grantor, c.grantee, c.udt_catalog, c.udt_schema, c.udt_name, c.privilege_type, c.is_grantable
 FROM information_schema.role_udt_grants c
+where c.udt_name not like '\_\_%'
 ORDER BY c.grantor, c.grantee, c.udt_catalog, c.udt_schema, c.udt_name, c.privilege_type, c.is_grantable;
 """
 , 
@@ -457,6 +467,7 @@ ORDER BY c.grantor, c.grantee, c.udt_catalog, c.udt_schema, c.udt_name, c.privil
 """
 SELECT c.grantor, c.grantee, c.object_catalog, c.object_schema, c.object_name, c.object_type, c.privilege_type, c.is_grantable
 FROM information_schema.role_usage_grants c
+where c.object_name not like '\_\_%'
 ORDER BY c.grantor, c.grantee, c.object_catalog, c.object_schema, c.object_name, c.object_type, c.privilege_type, c.is_grantable;
 """
 , 
@@ -492,6 +503,7 @@ ORDER BY c.specific_catalog, c.specific_schema, c.specific_name, c.routine_catal
 """
 SELECT c.specific_catalog, c.specific_schema, c.specific_name, c.routine_catalog, c.routine_schema, c.routine_name, c.sequence_catalog, c.sequence_schema, c.sequence_name
 FROM information_schema.routine_sequence_usage c
+where c.sequence_name not like '\_\_%'
 ORDER BY c.specific_catalog, c.specific_schema, c.specific_name, c.routine_catalog, c.routine_schema, c.routine_name, c.sequence_catalog, c.sequence_schema, c.sequence_name;
 """
 , 
@@ -510,6 +522,7 @@ ORDER BY c.specific_catalog, c.specific_schema, c.specific_name, c.routine_catal
 """
 SELECT c.specific_catalog, c.specific_schema, c.specific_name, c.routine_catalog, c.routine_schema, c.routine_name, c.routine_type, c.module_catalog, c.module_schema, c.module_name, c.udt_catalog, c.udt_schema, c.udt_name, c.data_type, c.character_maximum_length, c.character_octet_length, c.character_set_catalog, c.character_set_schema, c.character_set_name, c.collation_catalog, c.collation_schema, c.collation_name, c.numeric_precision, c.numeric_precision_radix, c.numeric_scale, c.datetime_precision, c.interval_type, c.interval_precision, c.type_udt_catalog, c.type_udt_schema, c.type_udt_name, c.scope_catalog, c.scope_schema, c.scope_name, c.maximum_cardinality, c.dtd_identifier, c.routine_body, c.routine_definition, c.external_name, c.external_language, c.parameter_style, c.is_deterministic, c.sql_data_access, c.is_null_call, c.sql_path, c.schema_level_routine, c.max_dynamic_result_sets, c.is_user_defined_cast, c.is_implicitly_invocable, c.security_type, c.to_sql_specific_catalog, c.to_sql_specific_schema, c.to_sql_specific_name, c.as_locator, c.created, c.last_altered, c.new_savepoint_level, c.is_udt_dependent, c.result_cast_from_data_type, c.result_cast_as_locator, c.result_cast_char_max_length, c.result_cast_char_octet_length, c.result_cast_char_set_catalog, c.result_cast_char_set_schema, c.result_cast_char_set_name, c.result_cast_collation_catalog, c.result_cast_collation_schema, c.result_cast_collation_name, c.result_cast_numeric_precision, c.result_cast_numeric_precision_radix, c.result_cast_numeric_scale, c.result_cast_datetime_precision, c.result_cast_interval_type, c.result_cast_interval_precision, c.result_cast_type_udt_catalog, c.result_cast_type_udt_schema, c.result_cast_type_udt_name, c.result_cast_scope_catalog, c.result_cast_scope_schema, c.result_cast_scope_name, c.result_cast_maximum_cardinality, c.result_cast_dtd_identifier
 FROM information_schema.routines c
+where c.udt_name not like '\_\_%'
 ORDER BY c.specific_catalog, c.specific_schema, c.specific_name, c.routine_catalog, c.routine_schema, c.routine_name, c.routine_type, c.module_catalog, c.module_schema, c.module_name, c.udt_catalog, c.udt_schema, c.udt_name, c.data_type, c.character_maximum_length, c.character_octet_length, c.character_set_catalog, c.character_set_schema, c.character_set_name, c.collation_catalog, c.collation_schema, c.collation_name, c.numeric_precision, c.numeric_precision_radix, c.numeric_scale, c.datetime_precision, c.interval_type, c.interval_precision, c.type_udt_catalog, c.type_udt_schema, c.type_udt_name, c.scope_catalog, c.scope_schema, c.scope_name, c.maximum_cardinality, c.dtd_identifier, c.routine_body, c.routine_definition, c.external_name, c.external_language, c.parameter_style, c.is_deterministic, c.sql_data_access, c.is_null_call, c.sql_path, c.schema_level_routine, c.max_dynamic_result_sets, c.is_user_defined_cast, c.is_implicitly_invocable, c.security_type, c.to_sql_specific_catalog, c.to_sql_specific_schema, c.to_sql_specific_name, c.as_locator, c.created, c.last_altered, c.new_savepoint_level, c.is_udt_dependent, c.result_cast_from_data_type, c.result_cast_as_locator, c.result_cast_char_max_length, c.result_cast_char_octet_length, c.result_cast_char_set_catalog, c.result_cast_char_set_schema, c.result_cast_char_set_name, c.result_cast_collation_catalog, c.result_cast_collation_schema, c.result_cast_collation_name, c.result_cast_numeric_precision, c.result_cast_numeric_precision_radix, c.result_cast_numeric_scale, c.result_cast_datetime_precision, c.result_cast_interval_type, c.result_cast_interval_precision, c.result_cast_type_udt_catalog, c.result_cast_type_udt_schema, c.result_cast_type_udt_name, c.result_cast_scope_catalog, c.result_cast_scope_schema, c.result_cast_scope_name, c.result_cast_maximum_cardinality, c.result_cast_dtd_identifier;
 """
 , 
@@ -526,6 +539,7 @@ ORDER BY c.catalog_name, c.schema_name, c.schema_owner, c.default_character_set_
 """
 SELECT c.sequence_catalog, c.sequence_schema, c.sequence_name, c.data_type, c.numeric_precision, c.numeric_precision_radix, c.numeric_scale, c.start_value, c.minimum_value, c.maximum_value, c.increment, c.cycle_option
 FROM information_schema.sequences c
+where c.sequence_name not like '\_\_%'
 ORDER BY c.sequence_catalog, c.sequence_schema, c.sequence_name, c.data_type, c.numeric_precision, c.numeric_precision_radix, c.numeric_scale, c.start_value, c.minimum_value, c.maximum_value, c.increment, c.cycle_option;
 """
 , 
@@ -596,6 +610,7 @@ ORDER BY c.table_catalog, c.table_schema, c.table_name, c.table_type, c.self_ref
 """
 SELECT c.udt_catalog, c.udt_schema, c.udt_name, c.specific_catalog, c.specific_schema, c.specific_name, c.group_name, c.transform_type
 FROM information_schema.transforms c
+where c.udt_name not like '\_\_%'
 ORDER BY c.udt_catalog, c.udt_schema, c.udt_name, c.specific_catalog, c.specific_schema, c.specific_name, c.group_name, c.transform_type;
 """
 , 
@@ -620,6 +635,7 @@ ORDER BY c.trigger_catalog, c.trigger_schema, c.trigger_name, c.event_manipulati
 """
 SELECT c.grantor, c.grantee, c.udt_catalog, c.udt_schema, c.udt_name, c.privilege_type, c.is_grantable
 FROM information_schema.udt_privileges c
+where c.udt_name not like '\_\_%'
 ORDER BY c.grantor, c.grantee, c.udt_catalog, c.udt_schema, c.udt_name, c.privilege_type, c.is_grantable;
 """
 , 
@@ -628,6 +644,7 @@ ORDER BY c.grantor, c.grantee, c.udt_catalog, c.udt_schema, c.udt_name, c.privil
 """
 SELECT c.grantor, c.grantee, c.object_catalog, c.object_schema, c.object_name, c.object_type, c.privilege_type, c.is_grantable
 FROM information_schema.usage_privileges c
+where c.object_name not like '\_\_%'
 ORDER BY c.grantor, c.grantee, c.object_catalog, c.object_schema, c.object_name, c.object_type, c.privilege_type, c.is_grantable;
 """
 , 
@@ -700,6 +717,7 @@ ORDER BY c.table_catalog, c.table_schema, c.table_name, c.view_definition, c.che
 "69":"""SELECT c.schemaname, c.tablename, c.indexname, c.tablespace, c.indexdef
 FROM pg_catalog.pg_indexes c
 WHERE c.schemaname =  %schema_name
+and c.tablename not like '\_\_%'
 ORDER BY c.schemaname, c.tablename, c.indexname, c.tablespace, c.indexdef;""", 
 
 
