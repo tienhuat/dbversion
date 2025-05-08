@@ -1,6 +1,7 @@
 import psycopg2
 import json
 import hashlib
+from psycopg2 import Error
 
 
 class Dbversion:
@@ -36,7 +37,7 @@ class Dbversion:
                               
                 for queryName, queryStatement in self.sqls.items():         
 
-                    queryStatement = queryStatement.replace("%schema_name", "'" + self.database + "' ")
+                    queryStatement = queryStatement.replace("%schema_name", "'" + self.schema + "' ")
 
                     cursor.execute(queryStatement)
                     rows = cursor.fetchall()
@@ -52,6 +53,7 @@ class Dbversion:
                 report = report.strip()          
         except Error as e:
             print("Error while connecting to Postgresql", e)
+            raise
         finally:
             # Closing the connection
             if connection.closed == 0:
@@ -692,7 +694,73 @@ FROM information_schema.views c
 WHERE table_schema =  %schema_name
 and c.TABLE_NAME not like '\_\_%'
 ORDER BY c.table_catalog, c.table_schema, c.table_name, c.view_definition, c.check_option, c.is_updatable, c.is_insertable_into, c.is_trigger_updatable, c.is_trigger_deletable, c.is_trigger_insertable_into;
-"""   
+"""
+, 
+
+"69":"""SELECT c.schemaname, c.tablename, c.indexname, c.tablespace, c.indexdef
+FROM pg_catalog.pg_indexes c
+WHERE c.schemaname =  %schema_name
+ORDER BY c.schemaname, c.tablename, c.indexname, c.tablespace, c.indexdef;""", 
+
+
+"70": """SELECT 
+  n.nspname AS schema,
+  p.proname AS name,
+  CASE p.prokind
+    WHEN 'f' THEN 'FUNCTION'
+    WHEN 'p' THEN 'PROCEDURE'
+    WHEN 'a' THEN 'AGGREGATE'
+    WHEN 'w' THEN 'WINDOW FUNCTION'
+    ELSE 'UNKNOWN'
+  END AS type,
+  pg_get_function_identity_arguments(p.oid) AS arguments,
+  pg_get_functiondef(p.oid) AS definition
+FROM pg_proc p
+JOIN pg_namespace n ON p.pronamespace = n.oid
+WHERE n.nspname NOT IN ('pg_catalog', 'information_schema')
+and n.nspname  =  %schema_name
+ORDER BY  n.nspname, 
+p.proname,
+p.prokind; """, 
+
+
+"71":"""SELECT 
+    n.nspname AS table_schema,
+    c.relname AS table_name,
+    t.tgname AS trigger_name,
+    pg_get_triggerdef(t.oid, true) AS definition
+FROM pg_trigger t
+JOIN pg_class c ON t.tgrelid = c.oid
+JOIN pg_namespace n ON c.relnamespace = n.oid
+WHERE NOT t.tgisinternal
+and n.nspname = %schema_name
+ORDER BY table_schema, table_name, trigger_name;
+""", 
+
+
+"72":"""SELECT 
+    schemaname AS table_schema,
+    tablename AS table_name,
+    rulename AS rule_name,
+    definition
+FROM pg_rules
+where schemaname = %schema_name
+ORDER BY table_schema, table_name, rule_name;  
+""", 
+
+
+"73":"""SELECT 
+    n.nspname AS table_schema,
+    c.relname AS table_name,
+    r.rulename,
+    pg_get_ruledef(r.oid, true) AS definition
+FROM pg_rewrite r
+JOIN pg_class c ON r.ev_class = c.oid
+JOIN pg_namespace n ON c.relnamespace = n.oid
+WHERE r.rulename <> '_RETURN'
+and n.nspname = %schema_name
+ORDER BY table_schema, table_name, r.rulename; """
+
     # --------------------------------
     # master data, which affect the application logic
     # Pls add any master data below, if any. 

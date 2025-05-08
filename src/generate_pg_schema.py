@@ -62,15 +62,31 @@ ORDER BY {order_by_clause};"""
 
 # Example usage
 if __name__ == "__main__":
-    schema = 'information_schema'  # or your specific schema
+    schema = 'pg_catalog'  # or your specific schema
     selects = generate_select_statements(schema)
     index = 0; 
+    sqls = ""
     for stmt in selects:
+        sqls += f"\"{index}\":"        
         print(f"\"{index}\":")
+
+        sqls += "\"" * 3
         print("\"" * 3) 
+
+        sqls += stmt
         print(stmt)
+
+        sqls += "\"" * 3
         print("\"" * 3)
-        print(", \n") 
+
+        sqls += ", \n\n"
+        print(", \n\n") 
+
         index += 1
+
+    # save the sqls to a file
+    with open("sql_statements.txt", "w") as f:
+        f.write(sqls)
+    print("SQL statements saved to sql_statements.txt")
 
 
