@@ -95,6 +95,15 @@ class Dbversion:
 
     sqls = {
 
+"0": """SELECT 
+  datname AS database_name,
+  pg_encoding_to_char(encoding) AS encoding,
+  datcollate AS lc_collate,
+  datctype AS lc_ctype
+FROM pg_database
+WHERE datname = current_database();
+"""
+,
 
 "7":
 """
