@@ -94,61 +94,7 @@ class Dbversion:
 # ----------------------------------------------------
 
     sqls = {
-"0":
-"""
-SELECT c.oid, c.fdwowner, c.fdwoptions, c.foreign_data_wrapper_catalog, c.foreign_data_wrapper_name, c.authorization_identifier, c.foreign_data_wrapper_language
-FROM information_schema._pg_foreign_data_wrappers c
-ORDER BY c.oid, c.fdwowner, c.fdwoptions, c.foreign_data_wrapper_catalog, c.foreign_data_wrapper_name, c.authorization_identifier, c.foreign_data_wrapper_language;
-"""
-, 
 
-"1":
-"""
-SELECT c.oid, c.srvoptions, c.foreign_server_catalog, c.foreign_server_name, c.foreign_data_wrapper_catalog, c.foreign_data_wrapper_name, c.foreign_server_type, c.foreign_server_version, c.authorization_identifier
-FROM information_schema._pg_foreign_servers c
-ORDER BY c.oid, c.srvoptions, c.foreign_server_catalog, c.foreign_server_name, c.foreign_data_wrapper_catalog, c.foreign_data_wrapper_name, c.foreign_server_type, c.foreign_server_version, c.authorization_identifier;
-"""
-, 
-
-"2":
-"""
-SELECT c.nspname, c.relname, c.attname, c.attfdwoptions
-FROM information_schema._pg_foreign_table_columns c
-ORDER BY c.nspname, c.relname, c.attname, c.attfdwoptions;
-"""
-, 
-
-"3":
-"""
-SELECT c.foreign_table_catalog, c.foreign_table_schema, c.foreign_table_name, c.ftoptions, c.foreign_server_catalog, c.foreign_server_name, c.authorization_identifier
-FROM information_schema._pg_foreign_tables c
-ORDER BY c.foreign_table_catalog, c.foreign_table_schema, c.foreign_table_name, c.ftoptions, c.foreign_server_catalog, c.foreign_server_name, c.authorization_identifier;
-"""
-, 
-
-"4":
-"""
-SELECT c.oid, c.umoptions, c.umuser, c.authorization_identifier, c.foreign_server_catalog, c.foreign_server_name, c.srvowner
-FROM information_schema._pg_user_mappings c
-ORDER BY c.oid, c.umoptions, c.umuser, c.authorization_identifier, c.foreign_server_catalog, c.foreign_server_name, c.srvowner;
-"""
-, 
-
-"5":
-"""
-SELECT c.grantee, c.role_name, c.is_grantable
-FROM information_schema.administrable_role_authorizations c
-ORDER BY c.grantee, c.role_name, c.is_grantable;
-"""
-, 
-
-"6":
-"""
-SELECT c.grantee, c.role_name, c.is_grantable
-FROM information_schema.applicable_roles c
-ORDER BY c.grantee, c.role_name, c.is_grantable;
-"""
-, 
 
 "7":
 """
@@ -230,17 +176,7 @@ and c.TABLE_NAME not like '\_\_%'
 And c.COLUMN_NAME not like '\_\_%'
 ORDER BY c.table_catalog, c.table_schema, c.table_name, c.column_name, c.option_name, c.option_value;
 """
-, 
 
-"16":
-"""
-SELECT c.grantor, c.grantee, c.table_catalog, c.table_schema, c.table_name, c.column_name, c.privilege_type, c.is_grantable
-FROM information_schema.column_privileges c
-WHERE table_schema =  %schema_name
-and c.TABLE_NAME not like '\_\_%'
-And c.COLUMN_NAME not like '\_\_%'
-ORDER BY c.grantor, c.grantee, c.table_catalog, c.table_schema, c.table_name, c.column_name, c.privilege_type, c.is_grantable;
-"""
 , 
 
 "17":
@@ -286,15 +222,7 @@ WHERE table_schema =  %schema_name
 and c.TABLE_NAME not like '\_\_%'
 ORDER BY c.table_catalog, c.table_schema, c.table_name, c.constraint_catalog, c.constraint_schema, c.constraint_name;
 """
-, 
 
-"21":
-"""
-SELECT c.object_catalog, c.object_schema, c.object_name, c.object_type, c.dtd_identifier
-FROM information_schema.data_type_privileges c
-where c.object_name not like '\_\_%'
-ORDER BY c.object_catalog, c.object_schema, c.object_name, c.object_type, c.dtd_identifier;
-"""
 , 
 
 "22":
@@ -331,71 +259,10 @@ where c.object_name not like '\_\_%'
 and c.udt_name not like '\_\_%'
 ORDER BY c.object_catalog, c.object_schema, c.object_name, c.object_type, c.collection_type_identifier, c.data_type, c.character_maximum_length, c.character_octet_length, c.character_set_catalog, c.character_set_schema, c.character_set_name, c.collation_catalog, c.collation_schema, c.collation_name, c.numeric_precision, c.numeric_precision_radix, c.numeric_scale, c.datetime_precision, c.interval_type, c.interval_precision, c.domain_default, c.udt_catalog, c.udt_schema, c.udt_name, c.scope_catalog, c.scope_schema, c.scope_name, c.maximum_cardinality, c.dtd_identifier;
 """
+
+
 , 
 
-"26":
-"""
-SELECT c.role_name
-FROM information_schema.enabled_roles c
-ORDER BY c.role_name;
-"""
-, 
-
-"27":
-"""
-SELECT c.foreign_data_wrapper_catalog, c.foreign_data_wrapper_name, c.option_name, c.option_value
-FROM information_schema.foreign_data_wrapper_options c
-ORDER BY c.foreign_data_wrapper_catalog, c.foreign_data_wrapper_name, c.option_name, c.option_value;
-"""
-, 
-
-"28":
-"""
-SELECT c.foreign_data_wrapper_catalog, c.foreign_data_wrapper_name, c.authorization_identifier, c.library_name, c.foreign_data_wrapper_language
-FROM information_schema.foreign_data_wrappers c
-ORDER BY c.foreign_data_wrapper_catalog, c.foreign_data_wrapper_name, c.authorization_identifier, c.library_name, c.foreign_data_wrapper_language;
-"""
-, 
-
-"29":
-"""
-SELECT c.foreign_server_catalog, c.foreign_server_name, c.option_name, c.option_value
-FROM information_schema.foreign_server_options c
-ORDER BY c.foreign_server_catalog, c.foreign_server_name, c.option_name, c.option_value;
-"""
-, 
-
-"30":
-"""
-SELECT c.foreign_server_catalog, c.foreign_server_name, c.foreign_data_wrapper_catalog, c.foreign_data_wrapper_name, c.foreign_server_type, c.foreign_server_version, c.authorization_identifier
-FROM information_schema.foreign_servers c
-ORDER BY c.foreign_server_catalog, c.foreign_server_name, c.foreign_data_wrapper_catalog, c.foreign_data_wrapper_name, c.foreign_server_type, c.foreign_server_version, c.authorization_identifier;
-"""
-, 
-
-"31":
-"""
-SELECT c.foreign_table_catalog, c.foreign_table_schema, c.foreign_table_name, c.option_name, c.option_value
-FROM information_schema.foreign_table_options c
-ORDER BY c.foreign_table_catalog, c.foreign_table_schema, c.foreign_table_name, c.option_name, c.option_value;
-"""
-, 
-
-"32":
-"""
-SELECT c.foreign_table_catalog, c.foreign_table_schema, c.foreign_table_name, c.foreign_server_catalog, c.foreign_server_name
-FROM information_schema.foreign_tables c
-ORDER BY c.foreign_table_catalog, c.foreign_table_schema, c.foreign_table_name, c.foreign_server_catalog, c.foreign_server_name;
-"""
-, 
-
-"33":
-"""
-SELECT c.catalog_name
-FROM information_schema.information_schema_catalog_name c
-ORDER BY c.catalog_name;
-"""
-, 
 
 "34":
 """
@@ -423,53 +290,8 @@ SELECT c.constraint_catalog, c.constraint_schema, c.constraint_name, c.unique_co
 FROM information_schema.referential_constraints c
 ORDER BY c.constraint_catalog, c.constraint_schema, c.constraint_name, c.unique_constraint_catalog, c.unique_constraint_schema, c.unique_constraint_name, c.match_option, c.update_rule, c.delete_rule;
 """
-, 
 
-"37":
-"""
-SELECT c.grantor, c.grantee, c.table_catalog, c.table_schema, c.table_name, c.column_name, c.privilege_type, c.is_grantable
-FROM information_schema.role_column_grants c
-WHERE table_schema =  %schema_name
-and c.TABLE_NAME not like '\_\_%'
-And c.COLUMN_NAME not like '\_\_%'
-ORDER BY c.grantor, c.grantee, c.table_catalog, c.table_schema, c.table_name, c.column_name, c.privilege_type, c.is_grantable;
-"""
-, 
 
-"38":
-"""
-SELECT c.grantor, c.grantee, c.specific_catalog, c.specific_schema, c.specific_name, c.routine_catalog, c.routine_schema, c.routine_name, c.privilege_type, c.is_grantable
-FROM information_schema.role_routine_grants c
-ORDER BY c.grantor, c.grantee, c.specific_catalog, c.specific_schema, c.specific_name, c.routine_catalog, c.routine_schema, c.routine_name, c.privilege_type, c.is_grantable;
-"""
-, 
-
-"39":
-"""
-SELECT c.grantor, c.grantee, c.table_catalog, c.table_schema, c.table_name, c.privilege_type, c.is_grantable, c.with_hierarchy
-FROM information_schema.role_table_grants c
-WHERE table_schema =  %schema_name
-and c.TABLE_NAME not like '\_\_%'
-ORDER BY c.grantor, c.grantee, c.table_catalog, c.table_schema, c.table_name, c.privilege_type, c.is_grantable, c.with_hierarchy;
-"""
-, 
-
-"40":
-"""
-SELECT c.grantor, c.grantee, c.udt_catalog, c.udt_schema, c.udt_name, c.privilege_type, c.is_grantable
-FROM information_schema.role_udt_grants c
-where c.udt_name not like '\_\_%'
-ORDER BY c.grantor, c.grantee, c.udt_catalog, c.udt_schema, c.udt_name, c.privilege_type, c.is_grantable;
-"""
-, 
-
-"41":
-"""
-SELECT c.grantor, c.grantee, c.object_catalog, c.object_schema, c.object_name, c.object_type, c.privilege_type, c.is_grantable
-FROM information_schema.role_usage_grants c
-where c.object_name not like '\_\_%'
-ORDER BY c.grantor, c.grantee, c.object_catalog, c.object_schema, c.object_name, c.object_type, c.privilege_type, c.is_grantable;
-"""
 , 
 
 "42":
@@ -481,14 +303,7 @@ and c.TABLE_NAME not like '\_\_%'
 And c.COLUMN_NAME not like '\_\_%'
 ORDER BY c.specific_catalog, c.specific_schema, c.specific_name, c.routine_catalog, c.routine_schema, c.routine_name, c.table_catalog, c.table_schema, c.table_name, c.column_name;
 """
-, 
 
-"43":
-"""
-SELECT c.grantor, c.grantee, c.specific_catalog, c.specific_schema, c.specific_name, c.routine_catalog, c.routine_schema, c.routine_name, c.privilege_type, c.is_grantable
-FROM information_schema.routine_privileges c
-ORDER BY c.grantor, c.grantee, c.specific_catalog, c.specific_schema, c.specific_name, c.routine_catalog, c.routine_schema, c.routine_name, c.privilege_type, c.is_grantable;
-"""
 , 
 
 "44":
@@ -525,14 +340,7 @@ FROM information_schema.routines c
 where c.udt_name not like '\_\_%'
 ORDER BY c.specific_catalog, c.specific_schema, c.specific_name, c.routine_catalog, c.routine_schema, c.routine_name, c.routine_type, c.module_catalog, c.module_schema, c.module_name, c.udt_catalog, c.udt_schema, c.udt_name, c.data_type, c.character_maximum_length, c.character_octet_length, c.character_set_catalog, c.character_set_schema, c.character_set_name, c.collation_catalog, c.collation_schema, c.collation_name, c.numeric_precision, c.numeric_precision_radix, c.numeric_scale, c.datetime_precision, c.interval_type, c.interval_precision, c.type_udt_catalog, c.type_udt_schema, c.type_udt_name, c.scope_catalog, c.scope_schema, c.scope_name, c.maximum_cardinality, c.dtd_identifier, c.routine_body, c.routine_definition, c.external_name, c.external_language, c.parameter_style, c.is_deterministic, c.sql_data_access, c.is_null_call, c.sql_path, c.schema_level_routine, c.max_dynamic_result_sets, c.is_user_defined_cast, c.is_implicitly_invocable, c.security_type, c.to_sql_specific_catalog, c.to_sql_specific_schema, c.to_sql_specific_name, c.as_locator, c.created, c.last_altered, c.new_savepoint_level, c.is_udt_dependent, c.result_cast_from_data_type, c.result_cast_as_locator, c.result_cast_char_max_length, c.result_cast_char_octet_length, c.result_cast_char_set_catalog, c.result_cast_char_set_schema, c.result_cast_char_set_name, c.result_cast_collation_catalog, c.result_cast_collation_schema, c.result_cast_collation_name, c.result_cast_numeric_precision, c.result_cast_numeric_precision_radix, c.result_cast_numeric_scale, c.result_cast_datetime_precision, c.result_cast_interval_type, c.result_cast_interval_precision, c.result_cast_type_udt_catalog, c.result_cast_type_udt_schema, c.result_cast_type_udt_name, c.result_cast_scope_catalog, c.result_cast_scope_schema, c.result_cast_scope_name, c.result_cast_maximum_cardinality, c.result_cast_dtd_identifier;
 """
-, 
 
-"48":
-"""
-SELECT c.catalog_name, c.schema_name, c.schema_owner, c.default_character_set_catalog, c.default_character_set_schema, c.default_character_set_name, c.sql_path
-FROM information_schema.schemata c
-ORDER BY c.catalog_name, c.schema_name, c.schema_owner, c.default_character_set_catalog, c.default_character_set_schema, c.default_character_set_name, c.sql_path;
-"""
 , 
 
 "49":
@@ -542,38 +350,7 @@ FROM information_schema.sequences c
 where c.sequence_name not like '\_\_%'
 ORDER BY c.sequence_catalog, c.sequence_schema, c.sequence_name, c.data_type, c.numeric_precision, c.numeric_precision_radix, c.numeric_scale, c.start_value, c.minimum_value, c.maximum_value, c.increment, c.cycle_option;
 """
-, 
 
-"50":
-"""
-SELECT c.feature_id, c.feature_name, c.sub_feature_id, c.sub_feature_name, c.is_supported, c.is_verified_by, c.comments
-FROM information_schema.sql_features c
-ORDER BY c.feature_id, c.feature_name, c.sub_feature_id, c.sub_feature_name, c.is_supported, c.is_verified_by, c.comments;
-"""
-, 
-
-"51":
-"""
-SELECT c.implementation_info_id, c.implementation_info_name, c.integer_value, c.character_value, c.comments
-FROM information_schema.sql_implementation_info c
-ORDER BY c.implementation_info_id, c.implementation_info_name, c.integer_value, c.character_value, c.comments;
-"""
-, 
-
-"52":
-"""
-SELECT c.feature_id, c.feature_name, c.is_supported, c.is_verified_by, c.comments
-FROM information_schema.sql_parts c
-ORDER BY c.feature_id, c.feature_name, c.is_supported, c.is_verified_by, c.comments;
-"""
-, 
-
-"53":
-"""
-SELECT c.sizing_id, c.sizing_name, c.supported_value, c.comments
-FROM information_schema.sql_sizing c
-ORDER BY c.sizing_id, c.sizing_name, c.supported_value, c.comments;
-"""
 , 
 
 "54":
@@ -584,16 +361,7 @@ WHERE table_schema =  %schema_name
 and c.TABLE_NAME not like '\_\_%'
 ORDER BY c.constraint_catalog, c.constraint_schema, c.constraint_name, c.table_catalog, c.table_schema, c.table_name, c.constraint_type, c.is_deferrable, c.initially_deferred, c.enforced, c.nulls_distinct;
 """
-, 
 
-"55":
-"""
-SELECT c.grantor, c.grantee, c.table_catalog, c.table_schema, c.table_name, c.privilege_type, c.is_grantable, c.with_hierarchy
-FROM information_schema.table_privileges c
-WHERE table_schema =  %schema_name
-and c.TABLE_NAME not like '\_\_%'
-ORDER BY c.grantor, c.grantee, c.table_catalog, c.table_schema, c.table_name, c.privilege_type, c.is_grantable, c.with_hierarchy;
-"""
 , 
 
 "56":
@@ -629,25 +397,10 @@ SELECT c.trigger_catalog, c.trigger_schema, c.trigger_name, c.event_manipulation
 FROM information_schema.triggers c
 ORDER BY c.trigger_catalog, c.trigger_schema, c.trigger_name, c.event_manipulation, c.event_object_catalog, c.event_object_schema, c.event_object_table, c.action_order, c.action_condition, c.action_statement, c.action_orientation, c.action_timing, c.action_reference_old_table, c.action_reference_new_table, c.action_reference_old_row, c.action_reference_new_row, c.created;
 """
+
 , 
 
-"60":
-"""
-SELECT c.grantor, c.grantee, c.udt_catalog, c.udt_schema, c.udt_name, c.privilege_type, c.is_grantable
-FROM information_schema.udt_privileges c
-where c.udt_name not like '\_\_%'
-ORDER BY c.grantor, c.grantee, c.udt_catalog, c.udt_schema, c.udt_name, c.privilege_type, c.is_grantable;
-"""
-, 
 
-"61":
-"""
-SELECT c.grantor, c.grantee, c.object_catalog, c.object_schema, c.object_name, c.object_type, c.privilege_type, c.is_grantable
-FROM information_schema.usage_privileges c
-where c.object_name not like '\_\_%'
-ORDER BY c.grantor, c.grantee, c.object_catalog, c.object_schema, c.object_name, c.object_type, c.privilege_type, c.is_grantable;
-"""
-, 
 
 "62":
 """
@@ -655,22 +408,8 @@ SELECT c.user_defined_type_catalog, c.user_defined_type_schema, c.user_defined_t
 FROM information_schema.user_defined_types c
 ORDER BY c.user_defined_type_catalog, c.user_defined_type_schema, c.user_defined_type_name, c.user_defined_type_category, c.is_instantiable, c.is_final, c.ordering_form, c.ordering_category, c.ordering_routine_catalog, c.ordering_routine_schema, c.ordering_routine_name, c.reference_type, c.data_type, c.character_maximum_length, c.character_octet_length, c.character_set_catalog, c.character_set_schema, c.character_set_name, c.collation_catalog, c.collation_schema, c.collation_name, c.numeric_precision, c.numeric_precision_radix, c.numeric_scale, c.datetime_precision, c.interval_type, c.interval_precision, c.source_dtd_identifier, c.ref_dtd_identifier;
 """
-, 
 
-"63":
-"""
-SELECT c.authorization_identifier, c.foreign_server_catalog, c.foreign_server_name, c.option_name, c.option_value
-FROM information_schema.user_mapping_options c
-ORDER BY c.authorization_identifier, c.foreign_server_catalog, c.foreign_server_name, c.option_name, c.option_value;
-"""
-, 
 
-"64":
-"""
-SELECT c.authorization_identifier, c.foreign_server_catalog, c.foreign_server_name
-FROM information_schema.user_mappings c
-ORDER BY c.authorization_identifier, c.foreign_server_catalog, c.foreign_server_name;
-"""
 , 
 
 "65":
